@@ -1,0 +1,77 @@
+{
+	"GENERAL": {	
+		"SELECT" : "Seleccione",
+		"BACK"   : "Anterior",
+		"SETTINGS" : "Ajustes",
+		"EXIT" : "Salir",
+		"MODE" : "Modo de conjugación",
+		"LOG_OUT" : "Cerrar sesión",
+		"ACCOUNT" : "Cuenta",
+		"CHANGE_PSW" : "Cambiar contraseña",
+		"RULE" : "Regla",
+		"SIGN_IN" : "Acceder",
+		"SIGN_UP" : "Registrarse",
+		"EMAIL" : "E-mail",
+		"PASSWORD" : "Contraseña",
+		"NAME" : "Usuario",
+		"CPASSWORD" : "Confirmar contraseña",
+		"CONFIG_CHANGED" : "Los cambios han sido guardados",
+		"CHANGE_FAIL" : "Ha ocurrido un error al intentar actualizar la configuración",
+		"CREATE_USER" : "Crear usuario",
+		"SEARCH" : "Buscar"
+	},
+
+	"LANG" : {
+		"LANG" : "Idioma",
+		"ES" : "Español",
+		"EN" : "English",
+		"CN" : "Chino",
+		"PT" : "Português",
+		"SP"   : "España",
+		"LAN"  : "Latino americano",
+		"LAS"  : "Argentina/Uruguay (voseo)"		
+	},
+
+	"HOME" : {
+		"MENU": {
+			"COMBINE_BUTTON" : "Conjugar",
+			"TITLE" 	     : "Menú",
+			"FAVS" : "Favoritos",
+			"DICT" : "Diccionario"			
+		}
+	},
+
+	"VERBS_MENU" : {
+		"TITLE" : "Seleccione un grupo",
+		"REGULAR" : "Verbos regulares",	
+		"IRREGULAR" : "Verbos irregulares",
+		"ORTH_CHANGE" : "Verbos regulares (cambio ortográfico)",
+		"ALL" : "Todos",
+		"START" : "Empezar",
+		"INFO"  : "Info",
+		"SIMPLE_TENSES" : "Tiempos simples",
+		"COMPOUND_TENSES" : "Tiempos compuestos",
+		"REFLEX_PRONOUN" : "Pronombre reflexivo",
+		"FORMAL" : "Formales",
+		"INFORMAL" : "Informales"	
+	},
+	
+	"ERROR" : {
+		"TITLE" : "Error",
+		"SUBTITLE" : "Ha ocurrido un error, por favor compruebe su conexión a internet.",
+		"TRY_AGAIN" : "Reintentar",
+		"EMAIL_TAKEN" : "Email no disponible",
+		"PASS_MISMATCH" : "La contraseña debe coincidir",
+		"UNKNOW" : "Ha ocurrido un error inesperado",
+		"CHECK_CREDS" : "Email o Contraseña errónea",
+		"NO_TUTO" : "No hay tutoriales para este verbo aun."
+	},
+	
+	"INFO" : {
+		"PERSONAL_PRONOUN" : {
+			"TITLE" : "Personal pronoun",
+			"CONTENT" : "Los <b style='color:green;'>pronombres personales</b> son las palabras que sirven para hacer referencia a las personas o sujetos que intervienen en un enunciado. Su función es sustituir al sustantivo cuando este ha sido omitido.",
+			"IMG_SRC" : ""
+		}
+	}	
+}

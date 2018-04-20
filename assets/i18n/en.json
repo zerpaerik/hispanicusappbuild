@@ -1,0 +1,74 @@
+{
+
+	"GENERAL": {	
+		"SELECT" : "Select",
+		"BACK"   : "Back",
+		"SETTINGS" : "Settings",
+		"EXIT" : "Exit",
+		"MODE" : "Conjugate mode",
+		"LOG_OUT" : "Log out",
+		"ACCOUNT" : "Account",
+		"CHANGE_PSW" : "Change Password",
+		"RULE" : "Rule",
+		"SIGN_IN" : "Sign in",
+		"SIGN_UP" : "Sign up",
+		"EMAIL" : "Email",
+		"PASSWORD" : "Password",
+		"NAME" : "Name",
+		"CPASSWORD" : "Confirm password",
+		"CHANGE_SUCCESS" : "Changes saved",
+		"CHANGE_FAIL" : "An error has occurred when trying to update settings",
+		"CREATE_USER" : "Create user",
+		"SEARCH" : "Search"
+	},
+
+	"LANG" : {
+		"LANG" : "Language",
+		"ES"   : "Español",
+		"EN"   : "English",
+		"CN"   : "Chinese",
+		"PT"   : "Português",
+		"SP"   : "Spain",
+		"LAN"  : "Latin America",
+		"LAS"  : "Argentina/Uruguay"
+	},
+
+	"HOME" : {
+		"MENU": {
+			"COMBINE_BUTTON" : "Conjugate",
+			"TITLE" 	     : "Menu",
+			"FAVS" : "Favorites",
+			"DICT" : "Dictionary"
+		}
+	},
+
+	"VERBS_MENU" : {
+		"TITLE" : "Select a group",
+		"REGULAR" : "Regular verbs",	
+		"IRREGULAR" : "Irregular verbs",
+		"ORTH_CHANGE" : "Regular verbs (orthographic change)",
+		"ALL" : "All",
+		"START" : "GO",
+		"INFO"  : "INFO",
+		"REFLEX_PRONOUN" : "Reflexive pronoun",
+		"FORMAL" : "Formal",
+		"INFORMAL" : "Informal"			
+	},
+
+	"ERROR" : {
+		"TITLE" : "Error",
+		"SUBTITLE" : "An error has ocurred, please check your internet connection.",
+		"TRY_AGAIN" : "Try again",
+		"EMAIL_TAKEN" : "This email is not available",
+		"PASS_MISMATCH" : "Password must match",
+		"UNKNOW" : "An unknow error has ocurred",
+		"CHECK_CREDS" : "Wrong email or password",
+		"NO_TUTO" : "There are not tutorials yet for this verb."
+	},
+	"INFO" : {
+		"PERSONAL_PRONOUN" : {
+			"TITLE" : "Personal pronoun",
+			"CONTENT" : "Esta representado con el <b style='color:green;'>color verde</b>. Los pronombres personales son las palabras que sirven para hacer referencia a las personas o sujetos que intervienen en un enunciado. Su función es sustituir al sustantivo cuando este ha sido omitido."
+		}
+	}
+}

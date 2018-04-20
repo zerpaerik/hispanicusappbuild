@@ -105,14 +105,9 @@ var DictsPage = (function () {
             this.sortedItems = this.getMatches(e.target.value);
         }
     };
-    DictsPage.prototype.checkValues = function () {
-        console.log(this.myInput);
-        console.log(this.sortedItems);
-        console.log(this.sortedItems);
-    };
     DictsPage.prototype.getMatches = function (val) {
         var ar = [];
-        for (var _i = 0, _a = this.unsorted[0]; _i < _a.length; _i++) {
+        for (var _i = 0, _a = this.unsorted; _i < _a.length; _i++) {
             var item = _a[_i];
             if (this.contain(item["infinitivo"], val) || this.contain(item["def"], val)) {
                 ar.push(item);
@@ -138,9 +133,11 @@ var DictsPage = (function () {
             loader.dismiss();
         }, function () {
             loader.dismiss();
+            _this.unsorted = [];
             for (var i in _this.verbs) {
-                _this.unsorted = [];
-                _this.unsorted.push(_this.verbs[i]);
+                for (var j in _this.verbs[i]) {
+                    _this.unsorted.push(_this.verbs[i][j]);
+                }
             }
         });
     };
@@ -199,7 +196,7 @@ var DictsPage = (function () {
     };
     DictsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-dicts',template:/*ion-inline-start:"C:\Users\JM\hispanicusapp\src\pages\dicts\dicts.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>{{\'HOME.MENU.DICT\' | translate}}</ion-title>\n\n  </ion-navbar>\n\n<ion-searchbar\n\n  mode="ios"\n\n  [(ngModel)]="myInput"\n\n  (ionInput)="onInput($event)"\n\n  animated="true"\n\n  debounce=200\n\n  placeholder="{{\'GENERAL.SEARCH\' | translate}}"\n\n  type="text"\n\n  id="search"\n\n  (focusout)="checkValues()">\n\n</ion-searchbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <div *ngIf="!myInput || myInput == \'\'; else normalList">\n\n  	<ion-list *ngFor="let i of keys">\n\n      <ion-item-divider color="light" (tap)="openModal()" id="{{i}}"><b>{{i}}</b></ion-item-divider>\n\n      <ion-item *ngFor="let it of verbs[i]">\n\n      	<h2 (click)="selectVerbo(it)"><b>{{it.infinitivo}}</b></h2>\n\n        <p style="color:gray;" (click)="selectVerbo(it)" >{{it.def}}</p>\n\n      </ion-item>\n\n    </ion-list>\n\n  </div>\n\n\n\n  <ng-template #normalList>\n\n    <ion-list>\n\n      <ion-item *ngFor="let item of sortedItems">\n\n        <h2 (click)="selectVerbo(item)"><b>{{item.infinitivo}}</b></h2>\n\n        <p style="color:gray;" (click)="selectVerbo(item)" >{{item.def}}</p>        \n\n      </ion-item>\n\n    </ion-list>\n\n  </ng-template>\n\n</ion-content>\n\n\n\n<ion-footer no-border>\n\n  <ion-toolbar block>\n\n    <ion-buttons align="center">\n\n      <button ion-button class="extrakeys" mode="ios" (click)="type(\'á\')"><b>á</b></button>\n\n      <button ion-button class="extrakeys" mode="ios" (click)="type(\'é\')"><b>é</b></button>\n\n      <button ion-button class="extrakeys" mode="ios" (click)="type(\'í\')"><b>í</b></button>\n\n      <button ion-button class="extrakeys" mode="ios" (click)="type(\'ó\')"><b>ó</b></button>\n\n      <button ion-button class="extrakeys" mode="ios" (click)="type(\'ú\')"><b>ú</b></button>\n\n      <button ion-button class="extrakeys" mode="ios" (click)="type(\'ñ\')"><b>ñ</b></button>\n\n      <button ion-button class="extrakeys" mode="ios" (click)="delete()"><b><ion-icon mode="md" name="arrow-back"></ion-icon></b></button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\JM\hispanicusapp\src\pages\dicts\dicts.html"*/,
+            selector: 'page-dicts',template:/*ion-inline-start:"C:\Users\JM\hispanicusapp\src\pages\dicts\dicts.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>{{\'HOME.MENU.DICT\' | translate}}</ion-title>\n\n  </ion-navbar>\n\n<ion-searchbar\n\n  mode="ios"\n\n  [(ngModel)]="myInput"\n\n  (ionInput)="onInput($event)"\n\n  animated="true"\n\n  debounce=200\n\n  placeholder="{{\'GENERAL.SEARCH\' | translate}}"\n\n  type="text"\n\n  id="search"\n\n  >\n\n</ion-searchbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <div *ngIf="!myInput || myInput == \'\'; else normalList">\n\n  	<ion-list *ngFor="let i of keys">\n\n      <ion-item-divider color="light" (tap)="openModal()" id="{{i}}"><b>{{i}}</b></ion-item-divider>\n\n      <ion-item *ngFor="let it of verbs[i]">\n\n      	<h2 (click)="selectVerbo(it)"><b>{{it.infinitivo}}</b></h2>\n\n        <p style="color:gray;" (click)="selectVerbo(it)" >{{it.def}}</p>\n\n      </ion-item>\n\n    </ion-list>\n\n  </div>\n\n\n\n  <ng-template #normalList>\n\n    <ion-list>\n\n      <ion-item *ngFor="let item of sortedItems">\n\n        <h2 (click)="selectVerbo(item)"><b>{{item.infinitivo}}</b></h2>\n\n        <p style="color:gray;" (click)="selectVerbo(item)" >{{item.def}}</p>        \n\n      </ion-item>\n\n    </ion-list>\n\n  </ng-template>\n\n</ion-content>\n\n\n\n<ion-footer no-border>\n\n  <ion-toolbar block>\n\n    <ion-buttons align="center">\n\n      <button ion-button class="extrakeys" mode="ios" (click)="type(\'í\')"><b>í</b></button>\n\n      <button ion-button class="extrakeys" mode="ios" (click)="type(\'ñ\')"><b>ñ</b></button>\n\n      <button ion-button class="extrakeys" mode="ios" (click)="delete()"><b><ion-icon mode="md" name="arrow-back"></ion-icon></b></button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\JM\hispanicusapp\src\pages\dicts\dicts.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */], __WEBPACK_IMPORTED_MODULE_3__providers_verbos_verbos__["a" /* VerbosProvider */]])
     ], DictsPage);

@@ -28063,6 +28063,17 @@ page-list-verbos .shine {
   background: #e7ff0e;
 }
 
+page-list-verbos .extrakeys {
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  padding-left: .8rem;
+  padding-right: .8rem;
+  background-color: lightgray;
+}
+
 .ion-ios-add:before {
   content: "\f102";
 }

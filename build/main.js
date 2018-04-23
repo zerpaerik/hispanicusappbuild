@@ -63,7 +63,7 @@ var HomePage = (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\JM\hispanicusapp\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title translate>{{\'HOME.MENU.TITLE\' | translate}}</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  \n\n  <ion-fab top right edge (click)="openModal()">\n\n    <button ion-fab class="grdnt"><ion-icon name="settings" ></ion-icon></button>\n\n  </ion-fab>\n\n  \n\n  <br><br>\n\n\n\n<div class="titleicon">\n\n   <img src="assets/imgs/logo.png" width="300px" height="270px" />\n\n</div>\n\n  \n\n  \n\n  <button class="grdnt" ion-button icon-start block (tap)="next()" translate>\n\n    <ion-icon name="create"></ion-icon>\n\n    {{\'HOME.MENU.COMBINE_BUTTON\' | translate}}\n\n  </button>\n\n\n\n  <button class="grdnt" ion-button icon-start block (tap)="goDict()" translate>\n\n    <ion-icon name="bookmarks"></ion-icon>\n\n    {{\'HOME.MENU.DICT\' | translate}}\n\n  </button>  \n\n\n\n  <button class="grdnt" ion-button icon-start block (tap)="goFavs()" translate>\n\n    <ion-icon name="star"></ion-icon>\n\n    {{\'HOME.MENU.FAVS\' | translate}}\n\n  </button>  \n\n  \n\n  <br>\n\n\n\n  <button class="grdnt" ion-button icon-start block (tap)="exit()" translate>\n\n    <ion-icon name="exit"></ion-icon>\n\n    {{\'GENERAL.EXIT\' | translate}}\n\n  </button>  \n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\JM\hispanicusapp\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\JM\hispanicusapp\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title translate>{{\'HOME.MENU.TITLE\' | translate}}</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  \n\n  <ion-fab top right edge (click)="openModal()">\n\n    <button ion-fab class="grdnt"><ion-icon name="settings" ></ion-icon></button>\n\n  </ion-fab>\n\n  \n\n  <br><br>\n\n\n\n<div class="titleicon">\n\n   <img src="assets/imgs/logo.png" width="250px" height="220px" />\n\n</div>\n\n  \n\n  \n\n  <button class="grdnt" ion-button icon-start block (tap)="next()" translate>\n\n    <ion-icon name="create"></ion-icon>\n\n    {{\'HOME.MENU.COMBINE_BUTTON\' | translate}}\n\n  </button>\n\n\n\n  <button class="grdnt" ion-button icon-start block (tap)="goDict()" translate>\n\n    <ion-icon name="bookmarks"></ion-icon>\n\n    {{\'HOME.MENU.DICT\' | translate}}\n\n  </button>  \n\n\n\n  <button class="grdnt" ion-button icon-start block (tap)="goFavs()" translate>\n\n    <ion-icon name="star"></ion-icon>\n\n    {{\'HOME.MENU.FAVS\' | translate}}\n\n  </button>  \n\n  \n\n  <br>\n\n\n\n  <button class="grdnt" ion-button icon-start block (tap)="exit()" translate>\n\n    <ion-icon name="exit"></ion-icon>\n\n    {{\'GENERAL.EXIT\' | translate}}\n\n  </button>  \n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\JM\hispanicusapp\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */]])
     ], HomePage);
@@ -117,7 +117,8 @@ var VerbosProvider = (function () {
     };
     VerbosProvider.prototype.getVerb = function (id) {
         var reg = localStorage.getItem('region') || JSON.stringify([0, 1, 2]);
-        return this.http.post('http://104.236.57.198/api/v1/verbo/' + id, { region: reg }, {
+        var l = localStorage.getItem('lang') || "es";
+        return this.http.post('http://104.236.57.198/api/v1/verbo/' + id, { region: reg, lang: l }, {
             headers: { 'Accept': 'appliacation/json' }
         });
     };
@@ -242,6 +243,7 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_verbos_list_verbos__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_smart_audio_smart_audio__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(26);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -255,11 +257,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var MenuVerboPage = (function () {
-    function MenuVerboPage(smartAudio, navCtrl, navParams) {
+    function MenuVerboPage(translate, smartAudio, navCtrl, navParams) {
+        var _this = this;
+        this.translate = translate;
         this.smartAudio = smartAudio;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.translate.get('VERBS_MENU').subscribe(function (res) {
+            _this.spelling = res.ORTH_CHANGE;
+        });
     }
     MenuVerboPage.prototype.next = function (t) {
         this.smartAudio.play('tapped');
@@ -267,9 +275,9 @@ var MenuVerboPage = (function () {
     };
     MenuVerboPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-menu-verbo',template:/*ion-inline-start:"C:\Users\JM\hispanicusapp\src\pages\menu-verbo\menu-verbo.html"*/'<!--\n\n  Generated template for the MenuVerboPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>{{\'VERBS_MENU.TITLE\' | translate}}</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n<ion-card>\n\n  <ion-card-header>\n\n    <h2 class="header-title" align=center>{{\'VERBS_MENU.REGULAR\' | translate}}</h2>\n\n  </ion-card-header>\n\n  <ion-card-content>\n\n  </ion-card-content>\n\n\n\n  <ion-row class="rows grdnt">\n\n    <ion-col>\n\n      <button ion-button icon-left color="light" clear small (tap)="next(1)">\n\n        <ion-icon name="paper"></ion-icon>\n\n        <div class="foot-text">{{\'VERBS_MENU.START\' | translate}}</div>\n\n      </button>\n\n    </ion-col>\n\n    <ion-col center text-center>\n\n      <button ion-button icon-left color="info" clear small>\n\n        <ion-icon name="alert" style="font-size: 25px;"></ion-icon>\n\n      </button>\n\n    </ion-col>\n\n  </ion-row>\n\n\n\n</ion-card>\n\n\n\n<ion-card>\n\n  <ion-card-header>\n\n    <h2 class="header-title" align=center>{{\'VERBS_MENU.ORTH_CHANGE\' | translate}}</h2>\n\n  </ion-card-header>\n\n  <ion-card-content>\n\n  </ion-card-content>\n\n\n\n  <ion-row class="rows grdnt">\n\n    <ion-col>\n\n      <button ion-button icon-left color="light" clear small (tap)="next(2)">\n\n        <ion-icon name="paper"></ion-icon>\n\n        <div class="foot-text">{{\'VERBS_MENU.START\' | translate}}</div>\n\n      </button>\n\n    </ion-col>\n\n    <ion-col center text-center>\n\n      <button ion-button icon-left color="info" clear small>\n\n        <ion-icon name="alert" style="font-size: 25px;"></ion-icon>\n\n      </button>\n\n    </ion-col>\n\n  </ion-row>\n\n\n\n</ion-card>\n\n\n\n<ion-card>\n\n  <ion-card-header>\n\n    <h2 class="header-title" align="center">{{\'VERBS_MENU.IRREGULAR\' | translate}}</h2>\n\n  </ion-card-header>\n\n  <ion-card-content>\n\n  </ion-card-content>\n\n\n\n  <ion-row class="rows grdnt">\n\n    <ion-col>\n\n      <button ion-button icon-left color="light" clear small (tap)="next(3)">\n\n        <ion-icon name="paper"></ion-icon>\n\n        <div class="foot-text">{{\'VERBS_MENU.START\' | translate}}</div>\n\n      </button>\n\n    </ion-col>\n\n    <ion-col center text-center>\n\n      <button ion-button icon-left color="info" clear small>\n\n        <ion-icon name="alert" style="font-size: 25px;"></ion-icon>\n\n      </button>\n\n    </ion-col>\n\n  </ion-row>\n\n\n\n</ion-card>  \n\n\n\n<ion-card>\n\n  <ion-card-header>\n\n    <h2 class="header-title" align="center">{{\'VERBS_MENU.ALL\' | translate}}</h2>\n\n  </ion-card-header>\n\n  <ion-card-content>\n\n  </ion-card-content>\n\n\n\n  <ion-row class="rows grdnt">\n\n    <ion-col>\n\n      <button ion-button icon-left color="light" clear small block (tap)="next(0)">\n\n        <ion-icon name="paper"></ion-icon>\n\n        <div class="foot-text">{{\'VERBS_MENU.START\' | translate}}</div>\n\n      </button>\n\n    </ion-col>\n\n  </ion-row>\n\n\n\n</ion-card>  \n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\JM\hispanicusapp\src\pages\menu-verbo\menu-verbo.html"*/,
+            selector: 'page-menu-verbo',template:/*ion-inline-start:"C:\Users\JM\hispanicusapp\src\pages\menu-verbo\menu-verbo.html"*/'<!--\n\n  Generated template for the MenuVerboPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>{{\'VERBS_MENU.TITLE\' | translate}}</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n<ion-card>\n\n  <ion-card-header>\n\n    <h2 class="header-title" align=center>{{\'VERBS_MENU.REGULAR\' | translate}}</h2>\n\n  </ion-card-header>\n\n  <ion-card-content>\n\n  </ion-card-content>\n\n\n\n  <ion-row class="rows grdnt">\n\n    <ion-col>\n\n      <button ion-button icon-left color="light" clear small (tap)="next(1)">\n\n        <ion-icon name="paper"></ion-icon>\n\n        <div class="foot-text">{{\'VERBS_MENU.START\' | translate}}</div>\n\n      </button>\n\n    </ion-col>\n\n    <ion-col center text-center>\n\n      <button ion-button icon-left color="info" clear small>\n\n        <ion-icon name="alert" style="font-size: 25px;"></ion-icon>\n\n      </button>\n\n    </ion-col>\n\n  </ion-row>\n\n\n\n</ion-card>\n\n\n\n<ion-card>\n\n  <ion-card-header>\n\n    <h2 class="header-title" align=center [innerHTML]="spelling"></h2>\n\n  </ion-card-header>\n\n  <ion-card-content>\n\n  </ion-card-content>\n\n\n\n  <ion-row class="rows grdnt">\n\n    <ion-col>\n\n      <button ion-button icon-left color="light" clear small (tap)="next(2)">\n\n        <ion-icon name="paper"></ion-icon>\n\n        <div class="foot-text">{{\'VERBS_MENU.START\' | translate}}</div>\n\n      </button>\n\n    </ion-col>\n\n    <ion-col center text-center>\n\n      <button ion-button icon-left color="info" clear small>\n\n        <ion-icon name="alert" style="font-size: 25px;"></ion-icon>\n\n      </button>\n\n    </ion-col>\n\n  </ion-row>\n\n\n\n</ion-card>\n\n\n\n<ion-card>\n\n  <ion-card-header>\n\n    <h2 class="header-title" align="center">{{\'VERBS_MENU.IRREGULAR\' | translate}}</h2>\n\n  </ion-card-header>\n\n  <ion-card-content>\n\n  </ion-card-content>\n\n\n\n  <ion-row class="rows grdnt">\n\n    <ion-col>\n\n      <button ion-button icon-left color="light" clear small (tap)="next(3)">\n\n        <ion-icon name="paper"></ion-icon>\n\n        <div class="foot-text">{{\'VERBS_MENU.START\' | translate}}</div>\n\n      </button>\n\n    </ion-col>\n\n    <ion-col center text-center>\n\n      <button ion-button icon-left color="info" clear small>\n\n        <ion-icon name="alert" style="font-size: 25px;"></ion-icon>\n\n      </button>\n\n    </ion-col>\n\n  </ion-row>\n\n\n\n</ion-card>  \n\n\n\n<ion-card>\n\n  <ion-card-header>\n\n    <h2 class="header-title" align="center">{{\'VERBS_MENU.ALL\' | translate}}</h2>\n\n  </ion-card-header>\n\n  <ion-card-content>\n\n  </ion-card-content>\n\n\n\n  <ion-row class="rows grdnt">\n\n    <ion-col>\n\n      <button ion-button icon-left color="light" clear small block (tap)="next(0)">\n\n        <ion-icon name="paper"></ion-icon>\n\n        <div class="foot-text">{{\'VERBS_MENU.START\' | translate}}</div>\n\n      </button>\n\n    </ion-col>\n\n  </ion-row>\n\n\n\n</ion-card>  \n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\JM\hispanicusapp\src\pages\menu-verbo\menu-verbo.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_3__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], MenuVerboPage);
     return MenuVerboPage;
 }());
@@ -289,7 +297,7 @@ var MenuVerboPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_verbos_verbos__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_config_config__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_smart_audio_smart_audio__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(26);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -528,7 +536,7 @@ var ListVerbosPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfigPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_config_config__ = __webpack_require__(59);
@@ -587,19 +595,19 @@ var ConfigPage = (function () {
         switch (xmode) {
             case '1':
                 localStorage.setItem('rmode', '1');
-                localStorage.setItem("region", JSON.stringify([0, 1, 2]));
+                localStorage.setItem("region", JSON.stringify([0, 2, 4]));
                 break;
             case '2':
                 localStorage.setItem('rmode', '2');
-                localStorage.setItem("region", JSON.stringify([0, 2]));
+                localStorage.setItem("region", JSON.stringify([0, 1, 4]));
                 break;
             case '3':
                 localStorage.setItem('rmode', '3');
-                localStorage.setItem("region", JSON.stringify([0, 2]));
+                localStorage.setItem("region", JSON.stringify([0, 1, 3]));
                 break;
             default:
                 localStorage.setItem('rmode', '1');
-                localStorage.setItem("region", JSON.stringify([0, 1, 2]));
+                localStorage.setItem("region", JSON.stringify([0, 2, 4]));
                 break;
         }
         this.configProvider.setRegion(xmode).subscribe(function (res) {
@@ -671,7 +679,7 @@ var ConfigPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_home__ = __webpack_require__(109);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -803,7 +811,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(299);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_globalization__ = __webpack_require__(216);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_http_loader__ = __webpack_require__(217);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_login_login__ = __webpack_require__(57);
@@ -932,7 +940,7 @@ var AppModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(210);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_smart_audio_smart_audio__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_login_login__ = __webpack_require__(57);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1065,7 +1073,7 @@ var SmartAudioProvider = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_globalization__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_forms__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_auth_auth__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(26);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);

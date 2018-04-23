@@ -31940,6 +31940,10 @@ page-verbo-regular ion-item-divider {
   border-top: 1px solid gray;
 }
 
+page-verbo-regular .unique {
+  color: red;
+}
+
 page-verbo-regular .fab {
   background-color: rgba(0, 0, 0, 0.4);
 }

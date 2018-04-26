@@ -105,7 +105,7 @@ var InfoPage = (function () {
     }
     InfoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-info',template:/*ion-inline-start:"C:\Users\JM\hispanicusapp\src\pages\info\info.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>info</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n		<div>\n\n			<ion-item-group>\n\n				<ion-item-divider color="light" [innerHTML]="title"></ion-item-divider>\n\n				<ion-item>\n\n					<p [innerHTML]="content" text-wrap class="info"></p>\n\n				</ion-item>\n\n			</ion-item-group>\n\n		</div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\JM\hispanicusapp\src\pages\info\info.html"*/,
+            selector: 'page-info',template:/*ion-inline-start:"C:\Users\JM\Documents\hispanicusapp\src\pages\info\info.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>info</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n		<div>\n\n			<ion-item-group>\n\n				<ion-item-divider color="light" [innerHTML]="title"></ion-item-divider>\n\n				<ion-item>\n\n					<p [innerHTML]="content" text-wrap class="info"></p>\n\n				</ion-item>\n\n			</ion-item-group>\n\n		</div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\JM\Documents\hispanicusapp\src\pages\info\info.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__["c" /* DomSanitizer */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], InfoPage);

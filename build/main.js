@@ -199,19 +199,19 @@ webpackEmptyAsyncContext.id = 124;
 
 var map = {
 	"../pages/dicts/dicts.module": [
-		301,
+		300,
 		4
 	],
 	"../pages/favorites/favorites.module": [
-		300,
+		301,
 		3
 	],
 	"../pages/info/info.module": [
-		303,
+		302,
 		2
 	],
 	"../pages/tutorial/tutorial.module": [
-		302,
+		303,
 		1
 	],
 	"../pages/verbo-regular/verbo-regular.module": [
@@ -885,10 +885,10 @@ var AppModule = (function () {
                     backButtonText: '',
                 }, {
                     links: [
-                        { loadChildren: '../pages/favorites/favorites.module#FavoritesPageModule', name: 'FavoritesPage', segment: 'favorites', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/dicts/dicts.module#DictsPageModule', name: 'DictsPage', segment: 'dicts', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/tutorial/tutorial.module#TutorialPageModule', name: 'TutorialPage', segment: 'tutorial', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/favorites/favorites.module#FavoritesPageModule', name: 'FavoritesPage', segment: 'favorites', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/info/info.module#InfoPageModule', name: 'InfoPage', segment: 'info', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/tutorial/tutorial.module#TutorialPageModule', name: 'TutorialPage', segment: 'tutorial', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/verbo-regular/verbo-regular.module#FavoritesPageModule', name: 'VerboRegularPage', segment: 'verbo-regular', priority: 'low', defaultHistory: [] }
                     ]
                 }),

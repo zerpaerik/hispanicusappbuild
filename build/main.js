@@ -97,7 +97,7 @@ var VerbosProvider = (function () {
         this.http = http;
     }
     VerbosProvider.prototype.getFavs = function () {
-        return this.http.get('http://localhost:8000/api/v1/favoritos', {
+        return this.http.get('http://104.236.57.198/api/v1/favoritos', {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('token'),
                 'Accept': 'application/json'
@@ -105,7 +105,7 @@ var VerbosProvider = (function () {
         });
     };
     VerbosProvider.prototype.getTuto = function (id) {
-        return this.http.get('http://localhost:8000/api/v1/tutorial/' + id, {
+        return this.http.get('http://104.236.57.198/api/v1/tutorial/' + id, {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('token'),
                 'Accept': 'application/json'
@@ -113,13 +113,13 @@ var VerbosProvider = (function () {
         });
     };
     VerbosProvider.prototype.listVerbs = function (tipo) {
-        return this.http.get('http://localhost:8000/api/v1/verbos/' + tipo);
+        return this.http.get('http://104.236.57.198/api/v1/verbos/' + tipo);
     };
     VerbosProvider.prototype.getVerb = function (id) {
         var reg = localStorage.getItem('region') || JSON.stringify([0, 2, 4]);
         var m = localStorage.getItem('rmode') || 1;
         var l = localStorage.getItem('lang') || "es";
-        return this.http.post('http://localhost:8000/api/v1/verbo/' + id, { region: reg, lang: l, modo: m }, {
+        return this.http.post('http://104.236.57.198/api/v1/verbo/' + id, { region: reg, lang: l, modo: m }, {
             headers: { 'Accept': 'appliacation/json' }
         });
     };
@@ -1207,13 +1207,13 @@ var AuthProvider = (function () {
     }
     AuthProvider.prototype.login = function (xemail, xpasword) {
         var authData = { 'email': xemail, 'password': xpasword };
-        return this.http.post('http://localhost:8000/api/v1/login', authData, {
+        return this.http.post('http://104.236.57.198/api/v1/login', authData, {
             headers: { 'Accept': 'application/json' }
         });
     };
     AuthProvider.prototype.register = function (xname, xemail, xpassword, xconfirm) {
         var regData = { 'name': xname, 'email': xemail, 'password': xpassword, 'confirm_password': xconfirm };
-        return this.http.post('http://localhost:8000/api/v1/register', regData, {
+        return this.http.post('http://104.236.57.198/api/v1/register', regData, {
             headers: { 'Accept': 'application/json' }
         });
     };
@@ -1222,7 +1222,7 @@ var AuthProvider = (function () {
         if (!token) {
             return;
         }
-        return this.http.post('http://localhost:8000/api/v1/logout', {}, {
+        return this.http.post('http://104.236.57.198/api/v1/logout', {}, {
             headers: {
                 'Authorization': "Bearer " + token,
                 'Accept': 'application/json'
@@ -1231,7 +1231,7 @@ var AuthProvider = (function () {
     };
     AuthProvider.prototype.checkEmailNotTaken = function (xemail) {
         var email = { 'email': xemail };
-        return this.http.post('http://localhost:8000/api/v1/checkemail', email, {
+        return this.http.post('http://104.236.57.198/api/v1/checkemail', email, {
             headers: {
                 'Accept': 'application/json'
             }
@@ -1272,7 +1272,7 @@ var ConfigProvider = (function () {
     }
     ConfigProvider.prototype.setLang = function (xlang) {
         var lang = { 'lang': xlang };
-        return this.http.post('http://localhost:8000/api/v1/lang', lang, {
+        return this.http.post('http://104.236.57.198/api/v1/lang', lang, {
             headers: {
                 'Accept': 'application/json',
                 'Authorization': 'Bearer ' + localStorage.getItem('token')
@@ -1280,7 +1280,7 @@ var ConfigProvider = (function () {
         });
     };
     ConfigProvider.prototype.getLang = function () {
-        return this.http.get('http://localhost:8000/api/v1/lang', {
+        return this.http.get('http://104.236.57.198/api/v1/lang', {
             headers: {
                 'Accept': 'application/json',
                 'Authorization': 'Bearer ' + localStorage.getItem('token')
@@ -1289,7 +1289,7 @@ var ConfigProvider = (function () {
     };
     ConfigProvider.prototype.setFavs = function (xfavs) {
         var favs = { 'favs': xfavs };
-        return this.http.post('http://localhost:8000/api/v1/favs', favs, {
+        return this.http.post('http://104.236.57.198/api/v1/favs', favs, {
             headers: {
                 'Accept': 'application/json',
                 'Authorization': 'Bearer ' + localStorage.getItem('token')
@@ -1297,7 +1297,7 @@ var ConfigProvider = (function () {
         });
     };
     ConfigProvider.prototype.getFavs = function () {
-        return this.http.get('http://localhost:8000/api/v1/favs', {
+        return this.http.get('http://104.236.57.198/api/v1/favs', {
             headers: {
                 'Accept': 'application/json',
                 'Authorization': 'Bearer ' + localStorage.getItem('token')
@@ -1306,7 +1306,7 @@ var ConfigProvider = (function () {
     };
     ConfigProvider.prototype.setRegion = function (xregion) {
         var region = { 'modo': xregion };
-        return this.http.post('http://localhost:8000/api/v1/region', region, {
+        return this.http.post('http://104.236.57.198/api/v1/region', region, {
             headers: {
                 'Accept': 'application/json',
                 'Authorization': 'Bearer ' + localStorage.getItem('token')
@@ -1314,7 +1314,7 @@ var ConfigProvider = (function () {
         });
     };
     ConfigProvider.prototype.getRegion = function () {
-        return this.http.get('http://localhost:8000/api/v1/region', {
+        return this.http.get('http://104.236.57.198/api/v1/region', {
             headers: {
                 'Accept': 'application/json',
                 'Authorization': 'Bearer ' + localStorage.getItem('token')

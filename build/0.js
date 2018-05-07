@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 304:
+/***/ 318:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,13 +9,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FavoritesPageModule", function() { return FavoritesPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__verbo_regular__ = __webpack_require__(309);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_verbos_verbos__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__verbo_regular__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_verbos_verbos__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_http_loader__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_smart_audio_smart_audio__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_native_audio__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_http_loader__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_smart_audio_smart_audio__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_native_audio__ = __webpack_require__(112);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -31,6 +31,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+//import { ScreenOrientation } from '@ionic-native/screen-orientation';
 function HttpLoaderFactory(httpClient) {
     return new __WEBPACK_IMPORTED_MODULE_6__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](httpClient, "./assets/i18n/", ".json");
 }
@@ -48,11 +49,11 @@ var FavoritesPageModule = (function () {
                     loader: {
                         provide: __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__["a" /* TranslateLoader */],
                         useFactory: HttpLoaderFactory,
-                        deps: [__WEBPACK_IMPORTED_MODULE_5__angular_common_http__["a" /* HttpClient */]]
+                        deps: [__WEBPACK_IMPORTED_MODULE_5__angular_common_http__["b" /* HttpClient */]]
                     }
                 })
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_3__providers_verbos_verbos__["a" /* VerbosProvider */], __WEBPACK_IMPORTED_MODULE_8__ionic_native_native_audio__["a" /* NativeAudio */], __WEBPACK_IMPORTED_MODULE_7__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */]]
+            providers: [__WEBPACK_IMPORTED_MODULE_3__providers_verbos_verbos__["a" /* VerbosProvider */], __WEBPACK_IMPORTED_MODULE_8__ionic_native_native_audio__["a" /* NativeAudio */], __WEBPACK_IMPORTED_MODULE_7__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */]] //ScreenOrientation
         })
     ], FavoritesPageModule);
     return FavoritesPageModule;
@@ -62,16 +63,16 @@ var FavoritesPageModule = (function () {
 
 /***/ }),
 
-/***/ 309:
+/***/ 325:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VerboRegularPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_verbos_verbos__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_verbos_verbos__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_smart_audio_smart_audio__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_smart_audio_smart_audio__ = __webpack_require__(31);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -89,8 +90,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+//import { ScreenOrientation } from '@ionic-native/screen-orientation';
 var VerboRegularPage = (function () {
-    function VerboRegularPage(smartAudio, plt, translateServ, alertCtrl, loadingCtrl, navCtrl, navParams, vp) {
+    function VerboRegularPage(/*private screenOrientation: ScreenOrientation, */ smartAudio, plt, translateServ, alertCtrl, loadingCtrl, navCtrl, navParams, vp) {
         var _this = this;
         this.smartAudio = smartAudio;
         this.plt = plt;
@@ -108,12 +110,25 @@ var VerboRegularPage = (function () {
         this.tenses = false;
         this.verbo = navParams.get('verbo');
         this.tenseMsgs = [];
+        /* if (this.plt.is('cordova')) {
+           let currentOrientation = this.screenOrientation.type;
+           console.log(currentOrientation);
+           console.log(this.verbo);
+           this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
+         }*/
         this.translateServ.get('VERBS_MENU').subscribe(function (verb) {
             _this.tenseMsgs = [verb.SIMPLE_TENSES, verb.COMPOUND_TENSES];
             _this.tense = verb.SIMPLE_TENSES;
         });
         smartAudio.preload('tapped', 'assets/audio/waterdroplet.mp3');
     }
+    /*
+      ionViewWillLeave(){
+        if (this.plt.is('cordova')) {
+          this.screenOrientation.unlock();
+        }
+      }
+    */
     VerboRegularPage.prototype.setVerbalTime = function () {
         var _this = this;
         this.smartAudio.play('tapped');
@@ -208,22 +223,6 @@ var VerboRegularPage = (function () {
     VerboRegularPage.prototype.ionViewDidLoad = function () {
         this.initData();
     };
-    VerboRegularPage.prototype.showRule = function (regla) {
-        if (!regla) {
-            return;
-        }
-        this.smartAudio.play('tapped');
-        var rule;
-        this.translateServ.get('GENERAL').subscribe(function (general) {
-            rule = general.RULE;
-        });
-        var alert = this.alertCtrl.create({
-            title: rule,
-            subTitle: regla,
-            buttons: ["OK"]
-        });
-        alert.present();
-    };
     VerboRegularPage.prototype.initData = function () {
         var _this = this;
         var loader = this.presentLoading();
@@ -231,10 +230,9 @@ var VerboRegularPage = (function () {
         loader.present();
         this.vp.getVerb(this.verbo.id)
             .subscribe(function (data) {
-            console.log(data);
+            _this.rules = data["reglas"];
             _this.verboData = data["data"];
             _this.verboKeys = Object.keys(_this.verboData);
-            console.log(_this.verboData);
             loader.dismiss();
         }, function (error) {
             loader.dismiss();
@@ -395,12 +393,36 @@ var VerboRegularPage = (function () {
             _this.showNotEmpty();
         }, 1);
     };
+    VerboRegularPage.prototype.getGramatical = function (value) {
+        switch (value) {
+            case 1:
+                if (localStorage.getItem("lang") == "en") {
+                    return (value + "st");
+                }
+                return (value + "ª");
+            case 2:
+                if (localStorage.getItem("lang") == "en") {
+                    return (value + "nd");
+                }
+                return (value + "ª");
+            case 3:
+                if (localStorage.getItem("lang") == "en") {
+                    return (value + "rd");
+                }
+                return (value + "ª");
+            default:
+                return (value + "ª");
+        }
+    };
     VerboRegularPage.prototype.goInfo = function (t) {
         this.navCtrl.push('InfoPage', { type: t });
     };
+    VerboRegularPage.prototype.goRule = function (rule) {
+        this.navCtrl.push('RulePage', { rules: rule });
+    };
     VerboRegularPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-verbo-regular',template:/*ion-inline-start:"C:\Users\JM\Documents\hispanicusapp\src\pages\verbo-regular\verbo-regular.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>{{verbo.infinitivo}}<span *ngIf="tenses">se</span></ion-title>\n\n    <ion-buttons right>\n\n      <button ion-button icon-only><ion-icon name="school" color="info"></ion-icon></button>\n\n      <button ion-button icon-only (click)="goTuto(verbo)"><ion-icon name="alert" color="info"></ion-icon></button>\n\n    </ion-buttons>    \n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content block>\n\n\n\n<ion-item id="tense">\n\n  <ion-label>{{\'VERBS_MENU.REFLEX_PRONOUN\' | translate}}</ion-label>\n\n  <ion-toggle checked="true" [(ngModel)]="tenses" (ionChange)="setTense()" color="info"></ion-toggle>  \n\n</ion-item>\n\n\n\n<div block>\n\n  <ion-segment [(ngModel)]="formaVerbal" mode="ios" color="danger" (ionChange)="setVerbalTime()">\n\n    <ion-segment-button value="indicativo">\n\n      Indicativo\n\n    </ion-segment-button>\n\n    <ion-segment-button value="subjuntivo">\n\n      Subjuntivo\n\n    </ion-segment-button>\n\n    <ion-segment-button value="imperativo">\n\n      Imperativo\n\n    </ion-segment-button>\n\n    <ion-segment-button value="fnp">\n\n      F.N.P.\n\n    </ion-segment-button>\n\n    <ion-segment-button value="todos">\n\n      {{\'VERBS_MENU.ALL\' | translate}}\n\n    </ion-segment-button>\n\n  </ion-segment>\n\n</div>\n\n\n\n  <ion-item-group *ngFor="let key of verboKeys;  let idx = index " id="{{key}}">\n\n    <ion-item-divider class="fdivider" color="primary">\n\n      <b>{{capit(key)}}</b> \n\n      <ion-icon name="alert" item-end (click)="goInfo(1)" color="info"></ion-icon>\n\n    </ion-item-divider>\n\n    <div *ngFor="let t of getKeys(verboData[key])">\n\n    \n\n    <ion-item-divider *ngIf="idx < 2" color="primary">\n\n      <b style="color:#ff592b;">{{capit(t)}}</b> \n\n      <ion-icon name="alert" item-end (click)="goTuto(verbo)" color="info"></ion-icon>\n\n    </ion-item-divider>\n\n\n\n    <div *ngFor="let f of getKeys(verboData[key][t]); let ff = first " class="verbitem">\n\n    \n\n    <ion-item-divider color="primary" *ngIf="key != \'imperativo\'">\n\n      <b>{{capit(f)}}</b>\n\n      <ion-icon name="alert" item-end (click)="goTuto(verbo)" color="info"></ion-icon>\n\n    </ion-item-divider>\n\n\n\n    <div *ngFor="let item of verboData[key][t][f]; let first = first">\n\n\n\n    <ion-item *ngIf="first && item.raiz ">\n\n      <ion-row>\n\n        <ion-col col-3 align="left">\n\n          <ion-icon (click)="goInfo(1)" name="alert" color="info" *ngIf="item.pronombre"></ion-icon>\n\n          <ion-icon (click)="goInfo(2)" name="alert" color="info" *ngIf="item.pronombre_formal_id"></ion-icon>\n\n        </ion-col>\n\n        <ion-col col-1 align="left">\n\n          <ion-icon (click)="goInfo(3)" name="alert" color="info" *ngIf="!afirmativo"></ion-icon>\n\n        </ion-col>\n\n        <ion-col col-1>\n\n          <ion-icon (click)="goInfo(4)" name="alert" color="info" *ngIf="tenses"></ion-icon>\n\n        </ion-col>\n\n        <ion-col col-2 align="center">\n\n          <ion-icon (click)="goInfo(5)" name="alert" color="info" *ngIf="item.verbo_auxiliar"></ion-icon>\n\n        </ion-col>\n\n        <ion-col col-4 align="right">\n\n          <ion-icon style="text-align:center;" (click)="goInfo(6)" name="alert" color="info"></ion-icon>\n\n          <ion-icon (click)="goInfo(7)" name="alert" color="info"></ion-icon>\n\n        </ion-col>\n\n        <ion-col col-1 align="right">\n\n          <ion-icon (click)="goInfo(8)" name="alert" color="info" *ngIf="item.pg"></ion-icon>\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-item>\n\n\n\n    <ion-item *ngIf="item.forma_verbal == forma">\n\n      <ion-row [class.unique]="(item.region > 0 && item.region < 4)">\n\n        <ion-col col-3>\n\n          <span *ngIf="item.pronombre">{{item.pronombre}}</span> \n\n          <span *ngIf="item.pronombre_formal_id">{{item.pronombre_formal_id}}</span>\n\n        </ion-col>\n\n        <ion-col col-1 ><span *ngIf="item.negativo != \'0\'">no</span></ion-col>\n\n        <ion-col col-1 ><span>{{item.pronombre_reflex}}</span></ion-col>\n\n        <ion-col col-2 align="center"><span>{{item.verbo_auxiliar}}</span></ion-col>\n\n        <ion-col col-4 align="right"><span [innerHTML]="item.raiz"></span><span class="desinencia" *ngIf="item.desinencia" [innerHTML]="item.desinencia"></span></ion-col>\n\n        <ion-col col-1 align="right">\n\n          <span *ngIf="!item.plural && item.pg" class="pgramatical2">{{item.pg}}ª</span>\n\n          <span *ngIf="item.plural && item.pg" class="pgramatical">{{item.pg}}ª</span>\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-item>\n\n    </div>\n\n  </div>\n\n\n\n  </div>\n\n  </ion-item-group>	\n\n\n\n</ion-content>\n\n<ion-footer no-border>\n\n  <ion-toolbar  block>\n\n    <ion-segment color="light" mode="md">\n\n      <ion-segment-button value="" (ionSelect)="informalAfmt()">\n\n        <ion-icon name="ios-thumbs-up-outline"></ion-icon>\n\n      </ion-segment-button>\n\n      <ion-segment-button value="" (ionSelect)="informalNeg()">\n\n        <ion-icon name="ios-thumbs-down-outline"></ion-icon>\n\n      </ion-segment-button>\n\n      <ion-segment-button value="" (ionSelect)="formalAfmt()">\n\n        <ion-icon name="ios-thumbs-up"></ion-icon>\n\n      </ion-segment-button>\n\n      <ion-segment-button value="" (ionSelect)="formalNeg()">\n\n        <ion-icon name="ios-thumbs-down"></ion-icon>\n\n      </ion-segment-button>\n\n    <ion-segment-button value="">\n\n      <ion-icon (click)="goTuto(verbo)" color="info" name="alert"></ion-icon>\n\n    </ion-segment-button>    \n\n    </ion-segment>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\JM\Documents\hispanicusapp\src\pages\verbo-regular\verbo-regular.html"*/,
+            selector: 'page-verbo-regular',template:/*ion-inline-start:"C:\Users\JM\Documents\hispanicusapp\src\pages\verbo-regular\verbo-regular.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>{{verbo.infinitivo}}<span *ngIf="tenses">se</span></ion-title>\n\n    <ion-buttons right>\n\n      <button tappable ion-button icon-only (click)="goTuto(verbo)"><ion-icon name="alert" color="info"></ion-icon></button>\n\n    </ion-buttons>    \n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content block>\n\n\n\n<ion-item id="tense">\n\n  <ion-label>{{\'VERBS_MENU.REFLEX_PRONOUN\' | translate}}</ion-label>\n\n  <ion-toggle checked="true" [(ngModel)]="tenses" (ionChange)="setTense()" color="info"></ion-toggle>  \n\n</ion-item>\n\n\n\n<div block>\n\n  <ion-segment [(ngModel)]="formaVerbal" mode="ios" color="danger" (ionChange)="setVerbalTime()">\n\n    <ion-segment-button tappable value="indicativo">\n\n      Indicativo\n\n    </ion-segment-button>\n\n    <ion-segment-button tappable value="subjuntivo">\n\n      Subjuntivo\n\n    </ion-segment-button>\n\n    <ion-segment-button tappable value="imperativo">\n\n      Imperativo\n\n    </ion-segment-button>\n\n    <ion-segment-button tappable value="fnp">\n\n      F.N.P.\n\n    </ion-segment-button>\n\n    <ion-segment-button tappable value="todos">\n\n      {{\'VERBS_MENU.ALL\' | translate}}\n\n    </ion-segment-button>\n\n  </ion-segment>\n\n</div>\n\n\n\n  <ion-item-group *ngFor="let key of verboKeys;  let idx = index " id="{{key}}">\n\n    <ion-item-divider class="fdivider" color="primary">\n\n      <b>{{capit(key)}}</b> \n\n      <ion-icon name="alert" item-end (click)="goInfo(1)" color="info"></ion-icon>\n\n    </ion-item-divider>\n\n    <div *ngFor="let t of getKeys(verboData[key])">\n\n    \n\n    <ion-item-divider *ngIf="idx < 2" color="primary">\n\n      <b style="color:#ff592b;">{{capit(t)}}</b> \n\n      <ion-icon name="alert" item-end (click)="goTuto(verbo)" color="info"></ion-icon>\n\n    </ion-item-divider>\n\n\n\n    <div *ngFor="let f of getKeys(verboData[key][t]); let ff = first " class="verbitem {{key}}">\n\n    \n\n    <ion-item-divider color="primary">\n\n      <b>{{capit(f)}}</b>\n\n      <ion-icon name="school" item-end *ngIf="myInclude(getKeys(rules), capit(f))" (click)="goRule(rules[capit(f)])" color="info"></ion-icon>\n\n      <ion-icon name="alert" item-end (click)="goTuto(verbo)" color="info"></ion-icon>\n\n    </ion-item-divider>\n\n\n\n    <div *ngFor="let item of verboData[key][t][f]; let first = first">\n\n\n\n    <ion-item *ngIf="first && item.raiz " no-padding>\n\n      <ion-row no-margin>\n\n        <ion-col col-3 align="left">\n\n          <ion-icon (click)="goInfo(\'p_informal\')" tappable name="alert" color="info" *ngIf="item.pronombre && capit(key) != \'Imperativo\'"></ion-icon>\n\n          <ion-icon (click)="goInfo(\'p_formal\')" tappable name="alert" color="info" *ngIf="item.pronombre_formal_id && capit(key) != \'Imperativo\'"></ion-icon>\n\n        </ion-col>\n\n        <ion-col col-1 align="left">\n\n          <ion-icon (click)="goInfo(\'negacion\')" tappable name="alert" color="info" *ngIf="!afirmativo"></ion-icon>\n\n        </ion-col>\n\n        <ion-col col-1>\n\n          <ion-icon (click)="goInfo(\'reflex\')" tappable name="alert" color="info" *ngIf="tenses"></ion-icon>\n\n        </ion-col>\n\n        <ion-col col-2 align="left">\n\n          <ion-icon (click)="goInfo(\'auxiliar\')" tappable name="alert" color="info" *ngIf="item.verbo_auxiliar"></ion-icon>\n\n        </ion-col>\n\n        <ion-col col-4 align="right">\n\n          <ion-icon *ngIf="item.raiz != \'nulo\'" (click)="goInfo(\'raiz\')" class="mover" tappable name="alert" color="info"></ion-icon>\n\n          <ion-icon (click)="goInfo(\'desinencia\')" tappable name="alert" color="info"></ion-icon>\n\n        </ion-col>\n\n        <ion-col col-1 align="right">\n\n          <ion-icon (click)="goInfo(\'p_gramatical\')" tappable name="alert" color="info" *ngIf="item.pg"></ion-icon>\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-item>\n\n\n\n    <ion-item *ngIf="item.forma_verbal == forma" no-padding>\n\n      <ion-row>\n\n        <ion-col col-3 align="left">\n\n          <span *ngIf="item.pronombre && capit(key) != \'Imperativo\'" [innerHTML]="item.pronombre"></span> \n\n          <span *ngIf="item.pronombre_formal_id && capit(key) != \'Imperativo\'" [innerHTML]="item.pronombre_formal_id"></span>\n\n        </ion-col>\n\n        <ion-col col-1 ><span *ngIf="item.negativo != \'0\'">no</span></ion-col>\n\n        <ion-col col-1 ><span [innerHTML]="item.pronombre_reflex"></span></ion-col>\n\n        <ion-col col-2 align="left"><span [innerHTML]="item.verbo_auxiliar"></span></ion-col>\n\n        <ion-col col-4 align="right"><span *ngIf="item.raiz != \'nulo\'" [innerHTML]="item.raiz"></span><span class="desinencia" *ngIf="item.desinencia" [innerHTML]="item.desinencia"></span></ion-col>\n\n        <ion-col col-1 align="right">\n\n          <span *ngIf="!item.plural && item.pg" class="pgramatical2">{{getGramatical(item.pg)}}</span>\n\n          <span *ngIf="item.plural && item.pg" class="pgramatical">{{getGramatical(item.pg)}}</span>\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-item>\n\n    </div>\n\n  </div>\n\n\n\n  </div>\n\n  </ion-item-group>	\n\n\n\n</ion-content>\n\n<ion-footer no-border>\n\n  <ion-toolbar  block>\n\n    <ion-segment color="light" mode="md">\n\n      <ion-segment-button tappable value="" (ionSelect)="informalAfmt()">\n\n        <ion-icon name="ios-thumbs-up-outline"></ion-icon>\n\n      </ion-segment-button>\n\n      <ion-segment-button tappable value="" (ionSelect)="informalNeg()">\n\n        <ion-icon name="ios-thumbs-down-outline"></ion-icon>\n\n      </ion-segment-button>\n\n      <ion-segment-button tappable value="" (ionSelect)="formalAfmt()">\n\n        <ion-icon name="ios-thumbs-up"></ion-icon>\n\n      </ion-segment-button>\n\n      <ion-segment-button tappable value="" (ionSelect)="formalNeg()">\n\n        <ion-icon name="ios-thumbs-down"></ion-icon>\n\n      </ion-segment-button>\n\n    <ion-segment-button tappable value="">\n\n      <ion-icon (click)="goInfo(\'dedos\')" color="info" name="alert"></ion-icon>\n\n    </ion-segment-button>    \n\n    </ion-segment>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\JM\Documents\hispanicusapp\src\pages\verbo-regular\verbo-regular.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_verbos_verbos__["a" /* VerbosProvider */]])
     ], VerboRegularPage);

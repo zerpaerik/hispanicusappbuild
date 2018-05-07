@@ -1,16 +1,16 @@
-webpackJsonp([5],{
+webpackJsonp([7],{
 
-/***/ 109:
+/***/ 110:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__menu_verbo_menu_verbo__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modals_config_config__ = __webpack_require__(214);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__login_login__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_smart_audio_smart_audio__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__menu_verbo_menu_verbo__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modals_config_config__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__login_login__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_smart_audio_smart_audio__ = __webpack_require__(31);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -49,6 +49,10 @@ var HomePage = (function () {
         this.smartAudio.play('tapped');
         this.navCtrl.push('DictsPage');
     };
+    HomePage.prototype.goContact = function () {
+        this.smartAudio.play('tapped');
+        this.navCtrl.push('ContactPage');
+    };
     HomePage.prototype.next = function () {
         this.smartAudio.play('tapped');
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__menu_verbo_menu_verbo__["a" /* MenuVerboPage */]);
@@ -63,7 +67,7 @@ var HomePage = (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\JM\Documents\hispanicusapp\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title translate>{{\'HOME.MENU.TITLE\' | translate}}</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  \n\n  <ion-fab top right edge (click)="openModal()">\n\n    <button ion-fab class="grdnt"><ion-icon name="settings" ></ion-icon></button>\n\n  </ion-fab>\n\n  \n\n  <br><br>\n\n\n\n<div class="titleicon">\n\n   <img src="assets/imgs/logo.png" width="250px" height="220px" />\n\n</div>\n\n  \n\n  \n\n  <button class="grdnt" ion-button icon-start block (tap)="next()" translate>\n\n    <ion-icon name="create"></ion-icon>\n\n    {{\'HOME.MENU.COMBINE_BUTTON\' | translate}}\n\n  </button>\n\n\n\n  <button class="grdnt" ion-button icon-start block (tap)="goDict()" translate>\n\n    <ion-icon name="bookmarks"></ion-icon>\n\n    {{\'HOME.MENU.DICT\' | translate}}\n\n  </button>  \n\n\n\n  <button class="grdnt" ion-button icon-start block (tap)="goFavs()" translate>\n\n    <ion-icon name="star"></ion-icon>\n\n    {{\'HOME.MENU.FAVS\' | translate}}\n\n  </button>  \n\n  \n\n  <br>\n\n\n\n  <button class="grdnt" ion-button icon-start block (tap)="exit()" translate>\n\n    <ion-icon name="exit"></ion-icon>\n\n    {{\'GENERAL.EXIT\' | translate}}\n\n  </button>  \n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\JM\Documents\hispanicusapp\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\JM\Documents\hispanicusapp\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title translate>{{\'HOME.MENU.TITLE\' | translate}}</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  \n\n  <ion-fab top right edge (click)="openModal()">\n\n    <button ion-fab class="grdnt"><ion-icon name="settings" ></ion-icon></button>\n\n  </ion-fab>\n\n  \n\n<div class="titleicon">\n\n   <img src="assets/imgs/logo.png" width="250px" height="220px" />\n\n</div>\n\n  \n\n  \n\n  <button class="grdnt" ion-button tappable icon-start block (tap)="next()" translate>\n\n    <ion-icon name="create"></ion-icon>\n\n    {{\'HOME.MENU.COMBINE_BUTTON\' | translate}}\n\n  </button>\n\n\n\n  <button class="grdnt" ion-button tappable icon-start block (tap)="goDict()" translate>\n\n    <ion-icon name="bookmarks"></ion-icon>\n\n    {{\'HOME.MENU.DICT\' | translate}}\n\n  </button>  \n\n\n\n  <button class="grdnt" ion-button tappable icon-start block (tap)="goFavs()" translate>\n\n    <ion-icon name="star"></ion-icon>\n\n    {{\'HOME.MENU.FAVS\' | translate}}\n\n  </button>  \n\n\n\n  <button class="grdnt" ion-button tappable icon-start block (tap)="goContact()" translate>\n\n    <ion-icon name="person"></ion-icon>\n\n    {{\'HOME.MENU.CONTACT\' | translate}}\n\n  </button>    \n\n  \n\n  <br>\n\n\n\n  <button class="grdnt" ion-button tappable icon-start block (tap)="exit()" translate>\n\n    <ion-icon name="exit"></ion-icon>\n\n    {{\'GENERAL.EXIT\' | translate}}\n\n  </button>  \n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\JM\Documents\hispanicusapp\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */]])
     ], HomePage);
@@ -74,13 +78,14 @@ var HomePage = (function () {
 
 /***/ }),
 
-/***/ 110:
+/***/ 111:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VerbosProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__globals__ = __webpack_require__(87);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -92,12 +97,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var VerbosProvider = (function () {
     function VerbosProvider(http) {
         this.http = http;
     }
     VerbosProvider.prototype.getFavs = function () {
-        return this.http.get('http://104.236.57.198/api/v1/favoritos', {
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_2__globals__["a" /* HOST */] + '/api/v1/favoritos', {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('token'),
                 'Accept': 'application/json'
@@ -105,7 +111,7 @@ var VerbosProvider = (function () {
         });
     };
     VerbosProvider.prototype.getTuto = function (id) {
-        return this.http.get('http://104.236.57.198/api/v1/tutorial/' + id, {
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_2__globals__["a" /* HOST */] + '/api/v1/tutorial/' + id, {
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('token'),
                 'Accept': 'application/json'
@@ -113,19 +119,20 @@ var VerbosProvider = (function () {
         });
     };
     VerbosProvider.prototype.listVerbs = function (tipo) {
-        return this.http.get('http://104.236.57.198/api/v1/verbos/' + tipo);
+        var xlang = localStorage.getItem('lang') || "en";
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_2__globals__["a" /* HOST */] + '/api/v1/verbos/' + tipo + '/' + xlang);
     };
     VerbosProvider.prototype.getVerb = function (id) {
         var reg = localStorage.getItem('region') || JSON.stringify([0, 2, 4]);
         var m = localStorage.getItem('rmode') || 1;
         var l = localStorage.getItem('lang') || "es";
-        return this.http.post('http://104.236.57.198/api/v1/verbo/' + id, { region: reg, lang: l, modo: m }, {
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_2__globals__["a" /* HOST */] + '/api/v1/verbo/' + id, { region: reg, lang: l, modo: m }, {
             headers: { 'Accept': 'appliacation/json' }
         });
     };
     VerbosProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */]])
     ], VerbosProvider);
     return VerbosProvider;
 }());
@@ -134,7 +141,7 @@ var VerbosProvider = (function () {
 
 /***/ }),
 
-/***/ 112:
+/***/ 113:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -177,7 +184,7 @@ var DiccionarioPage = (function () {
 
 /***/ }),
 
-/***/ 124:
+/***/ 125:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -190,32 +197,40 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 124;
+webpackEmptyAsyncContext.id = 125;
 
 /***/ }),
 
-/***/ 168:
+/***/ 169:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
+	"../pages/contact/contact.module": [
+		312,
+		6
+	],
 	"../pages/dicts/dicts.module": [
-		300,
-		4
+		313,
+		5
 	],
 	"../pages/favorites/favorites.module": [
-		301,
-		3
+		314,
+		4
 	],
 	"../pages/info/info.module": [
-		302,
+		315,
+		3
+	],
+	"../pages/rule/rule.module": [
+		316,
 		2
 	],
 	"../pages/tutorial/tutorial.module": [
-		303,
+		317,
 		1
 	],
 	"../pages/verbo-regular/verbo-regular.module": [
-		304,
+		318,
 		0
 	]
 };
@@ -230,20 +245,20 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 168;
+webpackAsyncContext.id = 169;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 212:
+/***/ 213:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuVerboPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_verbos_list_verbos__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_smart_audio_smart_audio__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list_verbos_list_verbos__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_smart_audio_smart_audio__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(26);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -287,17 +302,17 @@ var MenuVerboPage = (function () {
 
 /***/ }),
 
-/***/ 213:
+/***/ 214:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListVerbosPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modals_diccionario_diccionario__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_verbos_verbos__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modals_diccionario_diccionario__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_verbos_verbos__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_config_config__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_smart_audio_smart_audio__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_smart_audio_smart_audio__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(26);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -322,6 +337,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var ListVerbosPage = (function () {
     function ListVerbosPage(plt, alertCtrl, translateServ, smartAudio, configProvider, loadingCtrl, navCtrl, navParams, modalCtrl, vp) {
+        var _this = this;
         this.plt = plt;
         this.alertCtrl = alertCtrl;
         this.translateServ = translateServ;
@@ -337,20 +353,37 @@ var ListVerbosPage = (function () {
         this.items = [];
         this.types = navParams.get('type');
         this.initializeItems();
-        switch (this.types) {
-            case 1:
-                this.title = "Regular";
-                break;
-            case 2:
-                this.title = "Regular (cambio ortografico)";
-                break;
-            case 3:
-                this.title = "Irregular";
-                break;
-            default:
-                this.title = "Todos";
-                break;
-        }
+        this.translateServ.get('VERBS_MENU').subscribe(function (word) {
+            switch (_this.types) {
+                case 1:
+                    _this.title = word.REGULAR;
+                    break;
+                case 2:
+                    _this.title = word.ORTH_CHANGE;
+                    break;
+                case 3:
+                    _this.title = word.IRREGULAR;
+                    break;
+                default:
+                    _this.title = word.ALL;
+                    break;
+            }
+        }, function (error) {
+            switch (_this.types) {
+                case 1:
+                    _this.title = "Regular";
+                    break;
+                case 2:
+                    _this.title = "Regular <br> (With spelling change)";
+                    break;
+                case 3:
+                    _this.title = "Irregular";
+                    break;
+                default:
+                    _this.title = "All";
+                    break;
+            }
+        });
     }
     ListVerbosPage.prototype.onInput = function (e) {
         if (e.target.value && e.target.value != '') {
@@ -411,7 +444,7 @@ var ListVerbosPage = (function () {
             _this.verbs = data;
             console.log(data);
         }, function (error) {
-            _this.showAlert();
+            _this.showAlert().present();
             loader.dismiss();
         }, function () {
             loader.dismiss();
@@ -519,9 +552,11 @@ var ListVerbosPage = (function () {
     ], ListVerbosPage.prototype, "content", void 0);
     ListVerbosPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-list-verbos',template:/*ion-inline-start:"C:\Users\JM\Documents\hispanicusapp\src\pages\list-verbos\list-verbos.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>{{title}}</ion-title>    \n\n    <ion-buttons right>\n\n      <button ion-button icon-only><ion-icon name="book" ></ion-icon></button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n\n\n<ion-searchbar\n\n  mode="ios"\n\n  [(ngModel)]="myInput"\n\n  (ionInput)="onInput($event)"\n\n  animated="true"\n\n  debounce=200\n\n  placeholder="{{\'GENERAL.SEARCH\' | translate}}"\n\n  type="text"\n\n  id="search"\n\n  >\n\n</ion-searchbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <div *ngIf="!myInput || myInput == \'\'; else normalList">\n\n  	<ion-list *ngFor="let i of keys" >\n\n      <ion-item-divider color="light" (tap)="openModal()" id="{{i}}"><b>{{i}}</b></ion-item-divider>\n\n      <ion-item *ngFor="let it of verbs[i]">\n\n      	<h2 (click)="selectVerbo(it)"><b>{{it.infinitivo}}</b></h2>\n\n        <p style="color:gray;" (click)="selectVerbo(it)" >{{it.def}}</p>\n\n        <button ion-fab mini color="light" [ngClass]="{\'shine\': isFav(it.id)}" item-end (click)="addFav(it.id)">\n\n          <ion-icon name="star-outline"></ion-icon>\n\n        </button>  \n\n      </ion-item>\n\n    </ion-list>\n\n  </div>\n\n\n\n  <ng-template #normalList>\n\n    <ion-list>\n\n      <ion-item *ngFor="let item of sortedItems">\n\n        <h2 (click)="selectVerbo(item)"><b>{{item.infinitivo}}</b></h2>\n\n        <p style="color:gray;" (click)="selectVerbo(item)" >{{item.def}}</p>\n\n        <button ion-fab mini color="light" [ngClass]="{\'shine\': isFav(item.id)}" item-end (click)="addFav(item.id)">\n\n          <ion-icon name="star-outline"></ion-icon>\n\n        </button>                  \n\n      </ion-item>\n\n    </ion-list>\n\n  </ng-template>\n\n\n\n</ion-content>\n\n\n\n<ion-footer no-border>\n\n  <ion-toolbar block>\n\n    <ion-buttons align="center">\n\n      <button ion-button class="extrakeys" mode="ios" (click)="type(\'í\')"><b>í</b></button>\n\n      <button ion-button class="extrakeys" mode="ios" (click)="type(\'ñ\')"><b>ñ</b></button>\n\n      <button ion-button class="extrakeys" mode="ios" (click)="delete()"><b><ion-icon mode="md" name="arrow-back"></ion-icon></b></button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\JM\Documents\hispanicusapp\src\pages\list-verbos\list-verbos.html"*/,
+            selector: 'page-list-verbos',template:/*ion-inline-start:"C:\Users\JM\Documents\hispanicusapp\src\pages\list-verbos\list-verbos.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title><span  [innerHTML]="title"></span></ion-title>\n\n    <ion-buttons right>\n\n      <button tappable ion-button icon-only><ion-icon name="book" ></ion-icon></button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n\n\n<ion-searchbar\n\n  mode="ios"\n\n  [(ngModel)]="myInput"\n\n  (ionInput)="onInput($event)"\n\n  animated="true"\n\n  debounce=200\n\n  placeholder="{{\'GENERAL.SEARCH\' | translate}}"\n\n  type="text"\n\n  id="search"\n\n  >\n\n</ion-searchbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <div *ngIf="!myInput || myInput == \'\'; else normalList">\n\n  	<ion-list *ngFor="let i of keys" >\n\n      <ion-item-divider color="light" (tap)="openModal()" id="{{i}}"><b>{{i}}</b></ion-item-divider>\n\n      <ion-item *ngFor="let it of verbs[i]">\n\n      	<h2 tappable (click)="selectVerbo(it)"><b>{{it.infinitivo}}</b></h2>\n\n        <p style="color:gray;" tappable (click)="selectVerbo(it)" >{{it.def}}</p>\n\n        <button ion-fab mini color="light" [ngClass]="{\'shine\': isFav(it.id)}" item-end (click)="addFav(it.id)">\n\n          <ion-icon name="star-outline"></ion-icon>\n\n        </button>  \n\n      </ion-item>\n\n    </ion-list>\n\n  </div>\n\n\n\n  <ng-template #normalList>\n\n    <ion-list>\n\n      <ion-item *ngFor="let item of sortedItems">\n\n        <h2 (click)="selectVerbo(item)"><b>{{item.infinitivo}}</b></h2>\n\n        <p style="color:gray;" (click)="selectVerbo(item)" >{{item.def}}</p>\n\n        <button ion-fab mini color="light" [ngClass]="{\'shine\': isFav(item.id)}" item-end (click)="addFav(item.id)">\n\n          <ion-icon name="star-outline"></ion-icon>\n\n        </button>                  \n\n      </ion-item>\n\n    </ion-list>\n\n  </ng-template>\n\n\n\n</ion-content>\n\n\n\n<ion-footer no-border>\n\n  <ion-toolbar block>\n\n    <ion-buttons align="center">\n\n      <button ion-button class="extrakeys" mode="ios" (click)="type(\'í\')"><b>í</b></button>\n\n      <button ion-button class="extrakeys" mode="ios" (click)="type(\'ñ\')"><b>ñ</b></button>\n\n      <button ion-button class="extrakeys" mode="ios" (click)="delete()"><b><ion-icon mode="md" name="arrow-back"></ion-icon></b></button>\n\n    </ion-buttons>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\JM\Documents\hispanicusapp\src\pages\list-verbos\list-verbos.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_5__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_config_config__["a" /* ConfigProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */], __WEBPACK_IMPORTED_MODULE_3__providers_verbos_verbos__["a" /* VerbosProvider */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__["c" /* TranslateService */],
+            __WEBPACK_IMPORTED_MODULE_5__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_config_config__["a" /* ConfigProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */], __WEBPACK_IMPORTED_MODULE_3__providers_verbos_verbos__["a" /* VerbosProvider */]])
     ], ListVerbosPage);
     return ListVerbosPage;
 }());
@@ -530,7 +565,7 @@ var ListVerbosPage = (function () {
 
 /***/ }),
 
-/***/ 214:
+/***/ 215:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -538,10 +573,10 @@ var ListVerbosPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_config_config__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_smart_audio_smart_audio__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_smart_audio_smart_audio__ = __webpack_require__(31);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -579,7 +614,6 @@ var ConfigPage = (function () {
         localStorage.setItem('lang', xlang);
         this.translate.use(xlang);
         this.configProvider.setLang(xlang).subscribe(function (res) {
-            console.log(res);
             if (res['success']) {
                 _this.presentToast(true);
             }
@@ -631,9 +665,6 @@ var ConfigPage = (function () {
         }, function (error) {
             localStorage.clear();
             _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__pages_login_login__["a" /* LoginPage */]);
-        }, function () {
-            localStorage.clear();
-            _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__pages_login_login__["a" /* LoginPage */]);
         });
     };
     ConfigPage.prototype.close = function (e) {
@@ -660,7 +691,7 @@ var ConfigPage = (function () {
     };
     ConfigPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-config',template:/*ion-inline-start:"C:\Users\JM\Documents\hispanicusapp\src\modals\config\config.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n  	<button ion-button icon-left color="primary" clear small (click)="close($event)">\n\n        <ion-icon name="cancel"></ion-icon>\n\n        {{\'GENERAL.BACK\' | translate}}\n\n      </button>\n\n    <ion-title> <ion-icon name="cog"></ion-icon> {{\'GENERAL.SETTINGS\' | translate}}</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n	\n\n	<span><h4><ion-icon name="flag"></ion-icon> {{\'LANG.LANG\' | translate}}</h4></span>\n\n	<ion-list>\n\n	  <ion-item>\n\n	  	<ion-label>{{\'GENERAL.SELECT\' | translate}}</ion-label>\n\n			<ion-select okText="{{\'GENERAL.OK\' | translate}}" cancelText="{{\'GENERAL.CANCEL\' | translate}}" [(ngModel)]="lang" (ngModelChange)="changeLang()" block>\n\n	      <ion-option value="en">{{\'LANG.EN\' | translate}}</ion-option>\n\n	      <ion-option value="es">{{\'LANG.ES\' | translate}}</ion-option>\n\n	      <!--<ion-option value="pt" disabled>{{\'LANG.PT\' | translate}}</ion-option>\n\n	      <ion-option value="cn" disabled>{{\'LANG.CN\' | translate}}</ion-option>-->\n\n	    </ion-select>	  	\n\n	  </ion-item> \n\n	</ion-list>\n\n\n\n\n\n	<span><h4> <ion-icon name="globe" left></ion-icon> {{\'GENERAL.MODE\' | translate}}</h4> </span>\n\n	<ion-list>\n\n	  <ion-item>\n\n	  	<ion-label>{{\'GENERAL.SELECT\' | translate}}</ion-label>\n\n			<ion-select okText="{{\'GENERAL.OK\' | translate}}" cancelText="{{\'GENERAL.CANCEL\' | translate}}" [(ngModel)]="mode" (ngModelChange)="changeMode()" block>\n\n	      <ion-option value="1">{{\'LANG.SP\' | translate}}</ion-option>\n\n	      <ion-option value="2">{{\'LANG.LAN\' | translate}}</ion-option>\n\n	      <ion-option value="3">{{\'LANG.LAS\' | translate}}</ion-option>\n\n	    </ion-select>\n\n	    <button ion-button icon-only item-end>\n\n      <ion-icon color="info" name="alert"></ion-icon>\n\n    </button>\n\n	  </ion-item> \n\n	</ion-list>	\n\n\n\n	<span> <h4><ion-icon name="contact"></ion-icon> {{\'GENERAL.ACCOUNT\' | translate}}</h4></span>\n\n	<ion-list>\n\n\n\n	   <button class="grdnt" ion-button icon-start block (tap)="logout()"><ion-icon name="key"></ion-icon> {{\'GENERAL.CHANGE_PSW\' | translate}}</button>\n\n\n\n		 <button class="grdnt" ion-button icon-start block (tap)="logout()"><ion-icon name="exit"></ion-icon> {{\'GENERAL.LOG_OUT\' | translate}}</button>\n\n\n\n	</ion-list>		\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\JM\Documents\hispanicusapp\src\modals\config\config.html"*/,
+            selector: 'page-config',template:/*ion-inline-start:"C:\Users\JM\Documents\hispanicusapp\src\modals\config\config.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n  	<button ion-button icon-left color="primary" clear small (click)="close($event)">\n\n        <ion-icon name="cancel"></ion-icon>\n\n        {{\'GENERAL.BACK\' | translate}}\n\n      </button>\n\n    <ion-title> <ion-icon name="cog"></ion-icon> {{\'GENERAL.SETTINGS\' | translate}}</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n	\n\n	<span><h4><ion-icon name="flag"></ion-icon> {{\'LANG.LANG\' | translate}}</h4></span>\n\n	<ion-list>\n\n	  <ion-item>\n\n	  	<ion-label stacked>{{\'GENERAL.SELECT\' | translate}}</ion-label>\n\n			<ion-select okText="{{\'GENERAL.OK\' | translate}}" cancelText="{{\'GENERAL.CANCEL\' | translate}}" [(ngModel)]="lang" (ngModelChange)="changeLang()" block>\n\n	      <ion-option value="en">{{\'LANG.EN\' | translate}}</ion-option>\n\n	      <ion-option value="es">{{\'LANG.ES\' | translate}}</ion-option>\n\n	      <!--<ion-option value="pt" disabled>{{\'LANG.PT\' | translate}}</ion-option>\n\n	      <ion-option value="cn" disabled>{{\'LANG.CN\' | translate}}</ion-option>-->\n\n	    </ion-select>	  	\n\n	  </ion-item> \n\n	</ion-list>\n\n\n\n\n\n	<span><h4> <ion-icon name="globe" left></ion-icon> {{\'GENERAL.MODE\' | translate}}</h4> </span>\n\n	<ion-list>\n\n	  <ion-item>\n\n	  	<ion-label stacked>{{\'GENERAL.SELECT\' | translate}}</ion-label>\n\n			<ion-select okText="{{\'GENERAL.OK\' | translate}}" cancelText="{{\'GENERAL.CANCEL\' | translate}}" [(ngModel)]="mode" (ngModelChange)="changeMode()" block>\n\n	      <ion-option value="1">{{\'LANG.SP\' | translate}}</ion-option>\n\n	      <ion-option value="2">{{\'LANG.LAN\' | translate}}</ion-option>\n\n	      <ion-option value="3">{{\'LANG.LAS\' | translate}}</ion-option>\n\n	    </ion-select>\n\n	    <button ion-button icon-only item-end>\n\n      <ion-icon color="info" name="alert"></ion-icon>\n\n    </button>\n\n	  </ion-item> \n\n	</ion-list>	\n\n\n\n	<span> <h4><ion-icon name="contact"></ion-icon> {{\'GENERAL.ACCOUNT\' | translate}}</h4></span>\n\n	<ion-list>\n\n\n\n	   <button class="grdnt" ion-button icon-start block (tap)="logout()"><ion-icon name="key"></ion-icon> {{\'GENERAL.CHANGE_PSW\' | translate}}</button>\n\n\n\n		 <button class="grdnt" ion-button icon-start block (tap)="logout()"><ion-icon name="exit"></ion-icon> {{\'GENERAL.LOG_OUT\' | translate}}</button>\n\n\n\n	</ion-list>		\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\JM\Documents\hispanicusapp\src\modals\config\config.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_6__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */], __WEBPACK_IMPORTED_MODULE_5__providers_config_config__["a" /* ConfigProvider */], __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__["a" /* AuthProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ViewController */]])
     ], ConfigPage);
@@ -671,7 +702,7 @@ var ConfigPage = (function () {
 
 /***/ }),
 
-/***/ 215:
+/***/ 216:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -679,9 +710,9 @@ var ConfigPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_auth__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_home__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_home__ = __webpack_require__(110);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -786,13 +817,13 @@ var RegisterPage = (function () {
 
 /***/ }),
 
-/***/ 218:
+/***/ 220:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(219);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(240);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -800,34 +831,35 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 238:
+/***/ 240:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export HttpLoaderFactory */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(299);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_globalization__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(301);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_globalization__ = __webpack_require__(217);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_http_loader__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_login_login__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_register_register__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_menu_verbo_menu_verbo__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_list_verbos_list_verbos__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__modals_diccionario_diccionario__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__modals_config_config__ = __webpack_require__(214);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_status_bar__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_splash_screen__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_verbos_verbos__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_auth_auth__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_http_loader__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_login_login__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_register_register__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_menu_verbo_menu_verbo__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_list_verbos_list_verbos__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__modals_diccionario_diccionario__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__modals_config_config__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_status_bar__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_splash_screen__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_verbos_verbos__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_auth_auth__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_config_config__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_smart_audio_smart_audio__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ionic_native_native_audio__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_smart_audio_smart_audio__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ionic_native_native_audio__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_interceptor__ = __webpack_require__(302);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -860,6 +892,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 function HttpLoaderFactory(httpClient) {
     return new __WEBPACK_IMPORTED_MODULE_7__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](httpClient, "./assets/i18n/", ".json");
 }
@@ -885,19 +919,21 @@ var AppModule = (function () {
                     backButtonText: '',
                 }, {
                     links: [
+                        { loadChildren: '../pages/contact/contact.module#ContactPageModule', name: 'ContactPage', segment: 'contact', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/dicts/dicts.module#DictsPageModule', name: 'DictsPage', segment: 'dicts', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/favorites/favorites.module#FavoritesPageModule', name: 'FavoritesPage', segment: 'favorites', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/info/info.module#InfoPageModule', name: 'InfoPage', segment: 'info', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/rule/rule.module#RulePageModule', name: 'RulePage', segment: 'rule', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tutorial/tutorial.module#TutorialPageModule', name: 'TutorialPage', segment: 'tutorial', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/verbo-regular/verbo-regular.module#FavoritesPageModule', name: 'VerboRegularPage', segment: 'verbo-regular', priority: 'low', defaultHistory: [] }
                     ]
                 }),
-                __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClientModule */],
+                __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["c" /* HttpClientModule */],
                 __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__["b" /* TranslateModule */].forRoot({
                     loader: {
                         provide: __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__["a" /* TranslateLoader */],
                         useFactory: HttpLoaderFactory,
-                        deps: [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]]
+                        deps: [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */]]
                     }
                 })
             ],
@@ -921,7 +957,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_18__providers_auth_auth__["a" /* AuthProvider */],
                 __WEBPACK_IMPORTED_MODULE_21__ionic_native_native_audio__["a" /* NativeAudio */],
                 __WEBPACK_IMPORTED_MODULE_19__providers_config_config__["a" /* ConfigProvider */],
-                __WEBPACK_IMPORTED_MODULE_20__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */]
+                __WEBPACK_IMPORTED_MODULE_20__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */],
+                [{ provide: __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HTTP_INTERCEPTORS */], useClass: __WEBPACK_IMPORTED_MODULE_22__providers_interceptor__["a" /* TimeoutInterceptor */], multi: true }]
             ]
         })
     ], AppModule);
@@ -932,18 +969,18 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 299:
+/***/ 301:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(212);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_smart_audio_smart_audio__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_login_login__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_smart_audio_smart_audio__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_login_login__ = __webpack_require__(58);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -965,7 +1002,7 @@ var MyApp = (function () {
         this.translate = translate;
         this.rootPage = __WEBPACK_IMPORTED_MODULE_6__pages_login_login__["a" /* LoginPage */];
         var lang = localStorage.getItem('lang') || 'en';
-        translate.setDefaultLang(lang);
+        this.translate.setDefaultLang(lang);
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
@@ -987,14 +1024,46 @@ var MyApp = (function () {
 
 /***/ }),
 
-/***/ 30:
+/***/ 302:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TimeoutInterceptor; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_timeout__ = __webpack_require__(303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_timeout___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_timeout__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var TimeoutInterceptor = (function () {
+    function TimeoutInterceptor() {
+    }
+    TimeoutInterceptor.prototype.intercept = function (req, next) {
+        return next.handle(req).timeout(35000);
+    };
+    TimeoutInterceptor = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])()
+    ], TimeoutInterceptor);
+    return TimeoutInterceptor;
+}());
+
+//# sourceMappingURL=interceptor.js.map
+
+/***/ }),
+
+/***/ 31:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SmartAudioProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_audio__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_audio__ = __webpack_require__(112);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1062,18 +1131,97 @@ var SmartAudioProvider = (function () {
 
 /***/ }),
 
-/***/ 57:
+/***/ 44:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__globals__ = __webpack_require__(87);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AuthProvider = (function () {
+    function AuthProvider(http) {
+        this.http = http;
+    }
+    AuthProvider.prototype.login = function (xemail, xpasword) {
+        var authData = { 'email': xemail, 'password': xpasword };
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_2__globals__["a" /* HOST */] + '/api/v1/login', authData, {
+            headers: { 'Accept': 'application/json' }
+        });
+    };
+    AuthProvider.prototype.register = function (xname, xemail, xpassword, xconfirm) {
+        var regData = { 'name': xname, 'email': xemail, 'password': xpassword, 'confirm_password': xconfirm };
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_2__globals__["a" /* HOST */] + '/api/v1/register', regData, {
+            headers: { 'Accept': 'application/json' }
+        });
+    };
+    AuthProvider.prototype.logout = function () {
+        var token = localStorage.getItem('token');
+        if (!token) {
+            return;
+        }
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_2__globals__["a" /* HOST */] + '/api/v1/logout', {}, {
+            headers: {
+                'Authorization': "Bearer " + localStorage.getItem('token'),
+                'Accept': 'application/json'
+            }
+        });
+    };
+    AuthProvider.prototype.sendMessage = function (message) {
+        var token = localStorage.getItem('token');
+        if (!token) {
+            return;
+        }
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_2__globals__["a" /* HOST */] + '/api/v1/sendmessage', { msg: message }, {
+            headers: {
+                'Authorization': "Bearer " + localStorage.getItem('token'),
+                'Accept': 'application/json'
+            }
+        });
+    };
+    AuthProvider.prototype.checkEmailNotTaken = function (xemail) {
+        var email = { 'email': xemail };
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_2__globals__["a" /* HOST */] + '/api/v1/checkemail', email, {
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+    };
+    AuthProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */]])
+    ], AuthProvider);
+    return AuthProvider;
+}());
+
+//# sourceMappingURL=auth.js.map
+
+/***/ }),
+
+/***/ 58:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__register_register__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_globalization__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__register_register__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_globalization__ = __webpack_require__(217);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_forms__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_auth_auth__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_auth_auth__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(26);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1183,78 +1331,14 @@ var LoginPage = (function () {
 
 /***/ }),
 
-/***/ 58:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var AuthProvider = (function () {
-    function AuthProvider(http) {
-        this.http = http;
-    }
-    AuthProvider.prototype.login = function (xemail, xpasword) {
-        var authData = { 'email': xemail, 'password': xpasword };
-        return this.http.post('http://104.236.57.198/api/v1/login', authData, {
-            headers: { 'Accept': 'application/json' }
-        });
-    };
-    AuthProvider.prototype.register = function (xname, xemail, xpassword, xconfirm) {
-        var regData = { 'name': xname, 'email': xemail, 'password': xpassword, 'confirm_password': xconfirm };
-        return this.http.post('http://104.236.57.198/api/v1/register', regData, {
-            headers: { 'Accept': 'application/json' }
-        });
-    };
-    AuthProvider.prototype.logout = function () {
-        var token = localStorage.getItem('token');
-        if (!token) {
-            return;
-        }
-        return this.http.post('http://104.236.57.198/api/v1/logout', {}, {
-            headers: {
-                'Authorization': "Bearer " + token,
-                'Accept': 'application/json'
-            }
-        });
-    };
-    AuthProvider.prototype.checkEmailNotTaken = function (xemail) {
-        var email = { 'email': xemail };
-        return this.http.post('http://104.236.57.198/api/v1/checkemail', email, {
-            headers: {
-                'Accept': 'application/json'
-            }
-        });
-    };
-    AuthProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
-    ], AuthProvider);
-    return AuthProvider;
-}());
-
-//# sourceMappingURL=auth.js.map
-
-/***/ }),
-
 /***/ 59:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfigProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__globals__ = __webpack_require__(87);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1264,6 +1348,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 var ConfigProvider = (function () {
@@ -1272,7 +1357,7 @@ var ConfigProvider = (function () {
     }
     ConfigProvider.prototype.setLang = function (xlang) {
         var lang = { 'lang': xlang };
-        return this.http.post('http://104.236.57.198/api/v1/lang', lang, {
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_2__globals__["a" /* HOST */] + '/api/v1/lang', lang, {
             headers: {
                 'Accept': 'application/json',
                 'Authorization': 'Bearer ' + localStorage.getItem('token')
@@ -1280,7 +1365,7 @@ var ConfigProvider = (function () {
         });
     };
     ConfigProvider.prototype.getLang = function () {
-        return this.http.get('http://104.236.57.198/api/v1/lang', {
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_2__globals__["a" /* HOST */] + '/api/v1/lang', {
             headers: {
                 'Accept': 'application/json',
                 'Authorization': 'Bearer ' + localStorage.getItem('token')
@@ -1289,7 +1374,7 @@ var ConfigProvider = (function () {
     };
     ConfigProvider.prototype.setFavs = function (xfavs) {
         var favs = { 'favs': xfavs };
-        return this.http.post('http://104.236.57.198/api/v1/favs', favs, {
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_2__globals__["a" /* HOST */] + '/api/v1/favs', favs, {
             headers: {
                 'Accept': 'application/json',
                 'Authorization': 'Bearer ' + localStorage.getItem('token')
@@ -1297,7 +1382,7 @@ var ConfigProvider = (function () {
         });
     };
     ConfigProvider.prototype.getFavs = function () {
-        return this.http.get('http://104.236.57.198/api/v1/favs', {
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_2__globals__["a" /* HOST */] + '/api/v1/favs', {
             headers: {
                 'Accept': 'application/json',
                 'Authorization': 'Bearer ' + localStorage.getItem('token')
@@ -1306,7 +1391,7 @@ var ConfigProvider = (function () {
     };
     ConfigProvider.prototype.setRegion = function (xregion) {
         var region = { 'modo': xregion };
-        return this.http.post('http://104.236.57.198/api/v1/region', region, {
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_2__globals__["a" /* HOST */] + '/api/v1/region', region, {
             headers: {
                 'Accept': 'application/json',
                 'Authorization': 'Bearer ' + localStorage.getItem('token')
@@ -1314,7 +1399,7 @@ var ConfigProvider = (function () {
         });
     };
     ConfigProvider.prototype.getRegion = function () {
-        return this.http.get('http://104.236.57.198/api/v1/region', {
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_2__globals__["a" /* HOST */] + '/api/v1/region', {
             headers: {
                 'Accept': 'application/json',
                 'Authorization': 'Bearer ' + localStorage.getItem('token')
@@ -1323,14 +1408,25 @@ var ConfigProvider = (function () {
     };
     ConfigProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */]])
     ], ConfigProvider);
     return ConfigProvider;
 }());
 
 //# sourceMappingURL=config.js.map
 
+/***/ }),
+
+/***/ 87:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HOST; });
+var HOST = 'http://104.236.57.198';
+//104.236.57.198 
+//# sourceMappingURL=globals.js.map
+
 /***/ })
 
-},[218]);
+},[220]);
 //# sourceMappingURL=main.js.map

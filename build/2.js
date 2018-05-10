@@ -78,20 +78,20 @@ var RulePage = (function () {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.rules = navParams.get('rules') || [];
-        this.forma = navParams.get('forma') || 'Afirmativo informal';
+        this.forma = navParams.get('forma') || 'Afirmativo formal';
         console.log(this.rules);
         console.log(this.forma);
     }
     RulePage.prototype.enchular = function (s) {
-        s = s.replace('[', '<b class="rc">');
-        s = s.replace("]", '</b>');
-        s = s.replace('{', '<b class="bc">');
-        s = s.replace("}", '</b>');
+        s = s.replace(/\[/g, '<b class="rc">');
+        s = s.replace(/\]/g, '</b>');
+        s = s.replace(/\{/g, '<b class="bc">');
+        s = s.replace(/\}/g, '</b>');
         return s;
     };
     RulePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-rule',template:/*ion-inline-start:"C:\Users\JM\hispanicusapp\src\pages\rule\rule.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>{{\'GENERAL.RULES\' | translate}}</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n		<div *ngFor="let rule of rules; let index = index ">\n\n			<ion-card>\n\n		  <ion-card-header>\n\n		   {{\'GENERAL.RULE\' | translate}} Nº {{index + 1}}\n\n		   <ion-icon color="light" name="school" float-right></ion-icon>\n\n		  </ion-card-header>\n\n		  <ion-card-content>\n\n				<p *ngIf="rule.forma == forma">\n\n					<span [innerHTML]="enchular(rule.regla)"></span>\n\n				</p>	  	\n\n		  </ion-card-content>\n\n		</ion-card>\n\n	</div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\JM\hispanicusapp\src\pages\rule\rule.html"*/,
+            selector: 'page-rule',template:/*ion-inline-start:"C:\Users\JM\Documents\hispanicusapp\src\pages\rule\rule.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>{{\'GENERAL.RULES\' | translate}}</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n		<div *ngFor="let rule of rules; let index = index ">\n\n			<ion-card *ngIf="rule.forma == forma">\n\n		  <ion-card-header>\n\n		   {{\'GENERAL.RULE\' | translate}}\n\n		   <ion-icon color="light" name="school" float-right></ion-icon>\n\n		  </ion-card-header>\n\n		  <ion-card-content>\n\n				<p>\n\n					<span [innerHTML]="enchular(rule.regla)"></span>\n\n				</p>	  	\n\n		  </ion-card-content>\n\n		</ion-card>\n\n	</div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\JM\Documents\hispanicusapp\src\pages\rule\rule.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], RulePage);

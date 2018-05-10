@@ -34487,6 +34487,14 @@ page-rule .card-content {
   text-align: justify;
 }
 
+page-rule .rc {
+  color: #2889ff;
+}
+
+page-rule .bc {
+  color: #ff1275;
+}
+
 page-tutorial .card-header, page-tutorial .cardfooter {
   background-color: #367a99;
   color: white;

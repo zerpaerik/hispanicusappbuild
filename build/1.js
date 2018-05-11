@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 315:
+/***/ 316:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TutorialPageModule", function() { return TutorialPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tutorial__ = __webpack_require__(322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tutorial__ = __webpack_require__(323);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_verbos_verbos__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(35);
@@ -58,7 +58,7 @@ var TutorialPageModule = (function () {
 
 /***/ }),
 
-/***/ 322:
+/***/ 323:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -93,7 +93,7 @@ var TutorialPage = (function () {
     }
     TutorialPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-tutorial',template:/*ion-inline-start:"C:\Users\JM\Documents\hispanicusapp\src\pages\tutorial\tutorial.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{verbo.infinitivo}}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n	<ion-card>\n	  <ion-card-header>\n	    Tutorial\n	  </ion-card-header>\n	  <ion-card-content>\n	    <p *ngIf="tutorial; else not_found" justify="justify" class="tuto">{{tutorial}}</p>\n	    <ng-template #not_found class="tuto">{{\'ERROR.NO_TUTO\' | translate}}</ng-template>\n	  </ion-card-content>\n    <ion-row class="cardfooter">\n      <ion-col>\n      	<p id="def">{{verbo.def}}</p>\n      </ion-col>\n    </ion-row>\n	</ion-card>\n</ion-content>\n'/*ion-inline-end:"C:\Users\JM\Documents\hispanicusapp\src\pages\tutorial\tutorial.html"*/,
+            selector: 'page-tutorial',template:/*ion-inline-start:"C:\Users\JM\hispanicusapp\src\pages\tutorial\tutorial.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>{{verbo.infinitivo}}</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n	<ion-card>\n\n	  <ion-card-header>\n\n	    Tutorial\n\n	  </ion-card-header>\n\n	  <ion-card-content>\n\n	    <p *ngIf="tutorial; else not_found" justify="justify" class="tuto">{{tutorial}}</p>\n\n	    <ng-template #not_found class="tuto">{{\'ERROR.NO_TUTO\' | translate}}</ng-template>\n\n	  </ion-card-content>\n\n    <ion-row class="cardfooter">\n\n      <ion-col>\n\n      	<p id="def">{{verbo.def}}</p>\n\n      </ion-col>\n\n    </ion-row>\n\n	</ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\JM\hispanicusapp\src\pages\tutorial\tutorial.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_verbos_verbos__["a" /* VerbosProvider */]])
     ], TutorialPage);

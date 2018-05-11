@@ -1,6 +1,6 @@
 webpackJsonp([4],{
 
-/***/ 312:
+/***/ 313:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FavoritesPageModule", function() { return FavoritesPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__favorites__ = __webpack_require__(319);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__favorites__ = __webpack_require__(320);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_verbos_verbos__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_config_config__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(26);
@@ -64,7 +64,7 @@ var FavoritesPageModule = (function () {
 
 /***/ }),
 
-/***/ 319:
+/***/ 320:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -154,7 +154,7 @@ var FavoritesPage = (function () {
     };
     FavoritesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-favorites',template:/*ion-inline-start:"C:\Users\JM\Documents\hispanicusapp\src\pages\favorites\favorites.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{\'HOME.MENU.FAVS\' | translate}}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content block>\n	<ion-list>\n    <ion-item *ngFor="let verb of verbs">\n    	<h2 (click)="selectVerbo(verb)"><b>{{verb.infinitivo}}</b></h2>\n      <p style="color:gray;" (click)="selectVerbo(verb)" >{{verb.def}}</p>\n      <button ion-fab mini color="light" [ngClass]="{\'shine\': isFav(verb.id)}" item-end (click)="addFav(verb.id)">\n        <ion-icon name="star-outline"></ion-icon>\n      </button>  \n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\JM\Documents\hispanicusapp\src\pages\favorites\favorites.html"*/,
+            selector: 'page-favorites',template:/*ion-inline-start:"C:\Users\JM\hispanicusapp\src\pages\favorites\favorites.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>{{\'HOME.MENU.FAVS\' | translate}}</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content block>\n\n	<ion-list>\n\n    <ion-item *ngFor="let verb of verbs">\n\n    	<h2 (click)="selectVerbo(verb)"><b>{{verb.infinitivo}}</b></h2>\n\n      <p style="color:gray;" (click)="selectVerbo(verb)" >{{verb.def}}</p>\n\n      <button ion-fab mini color="light" [ngClass]="{\'shine\': isFav(verb.id)}" item-end (click)="addFav(verb.id)">\n\n        <ion-icon name="star-outline"></ion-icon>\n\n      </button>  \n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\JM\hispanicusapp\src\pages\favorites\favorites.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_4__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_verbos_verbos__["a" /* VerbosProvider */], __WEBPACK_IMPORTED_MODULE_3__providers_config_config__["a" /* ConfigProvider */]])
     ], FavoritesPage);

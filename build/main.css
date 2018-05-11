@@ -30596,6 +30596,10 @@ page-diccionario .row {
   font-size: 35px;
 }
 
+page-diccionario .changeSize {
+  font-size: 0.8rem;
+}
+
 page-dicts .shine {
   color: #ff0fe7;
   background: #e7ff0e;
@@ -34525,6 +34529,11 @@ page-verbo-regular .item-md.item-block .item-inner {
   padding-left: 1px;
   padding-right: 1px;
   margin: 0;
+}
+
+page-verbo-regular .sup {
+  vertical-align: super;
+  font-size: 0.9rem;
 }
 
 page-verbo-regular ion-item-divider {

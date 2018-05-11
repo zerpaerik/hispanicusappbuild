@@ -210,11 +210,11 @@ var map = {
 		6
 	],
 	"../pages/dicts/dicts.module": [
-		312,
+		313,
 		5
 	],
 	"../pages/favorites/favorites.module": [
-		313,
+		312,
 		4
 	],
 	"../pages/info/info.module": [
@@ -222,11 +222,11 @@ var map = {
 		3
 	],
 	"../pages/rule/rule.module": [
-		315,
+		316,
 		2
 	],
 	"../pages/tutorial/tutorial.module": [
-		316,
+		315,
 		1
 	],
 	"../pages/verbo-regular/verbo-regular.module": [
@@ -918,11 +918,11 @@ var AppModule = (function () {
                 }, {
                     links: [
                         { loadChildren: '../pages/contact/contact.module#ContactPageModule', name: 'ContactPage', segment: 'contact', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/dicts/dicts.module#DictsPageModule', name: 'DictsPage', segment: 'dicts', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/favorites/favorites.module#FavoritesPageModule', name: 'FavoritesPage', segment: 'favorites', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/dicts/dicts.module#DictsPageModule', name: 'DictsPage', segment: 'dicts', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/info/info.module#InfoPageModule', name: 'InfoPage', segment: 'info', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/rule/rule.module#RulePageModule', name: 'RulePage', segment: 'rule', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tutorial/tutorial.module#TutorialPageModule', name: 'TutorialPage', segment: 'tutorial', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/rule/rule.module#RulePageModule', name: 'RulePage', segment: 'rule', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/verbo-regular/verbo-regular.module#FavoritesPageModule', name: 'VerboRegularPage', segment: 'verbo-regular', priority: 'low', defaultHistory: [] }
                     ]
                 }),

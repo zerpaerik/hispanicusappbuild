@@ -1,1 +1,169 @@
-webpackJsonp([4],{274:function(l,n,u){"use strict";function a(l){return new f.a(l,"./assets/i18n/",".json")}function t(l){return e._25(0,[(l()(),e._3(0,0,null,null,22,"ion-item",[["class","item item-block"]],null,null,null,D.b,D.a)),e._2(1,1097728,null,3,O.a,[S.a,C.a,e.k,e.D,[2,I.a]],null,null),e._21(335544320,1,{contentLabel:0}),e._21(603979776,2,{_buttons:1}),e._21(603979776,3,{_icons:1}),e._2(5,16384,null,0,$.a,[],null,null),(l()(),e._23(-1,2,["\n    \t"])),(l()(),e._3(7,0,null,2,2,"h2",[],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.selectVerbo(l.context.$implicit)&&a}return a},null,null)),(l()(),e._3(8,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),e._23(9,null,["",""])),(l()(),e._23(-1,2,["\n      "])),(l()(),e._3(11,0,null,2,1,"p",[["style","color:gray;"]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.selectVerbo(l.context.$implicit)&&a}return a},null,null)),(l()(),e._23(12,null,["",""])),(l()(),e._23(-1,2,["\n      "])),(l()(),e._3(14,0,null,4,7,"button",[["color","light"],["ion-fab",""],["item-end",""],["mini",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.addFav(l.context.$implicit.id)&&a}return a},J.b,J.a)),e._2(15,278528,null,0,M.g,[e.s,e.t,e.k,e.E],{ngClass:[0,"ngClass"]},null),e._19(16,{shine:0}),e._2(17,49152,null,0,N.a,[C.a,e.k,e.D],{color:[0,"color"]},null),(l()(),e._23(-1,0,["\n        "])),(l()(),e._3(19,0,null,0,1,"ion-icon",[["name","star-outline"],["role","img"]],[[2,"hide",null]],null,null,null,null)),e._2(20,147456,null,0,V.a,[C.a,e.k,e.D],{name:[0,"name"]},null),(l()(),e._23(-1,0,["\n      "])),(l()(),e._23(-1,2,["  \n    "]))],function(l,n){l(n,15,0,l(n,16,0,n.component.isFav(n.context.$implicit.id)));l(n,17,0,"light");l(n,20,0,"star-outline")},function(l,n){l(n,9,0,n.context.$implicit.infinitivo);l(n,12,0,n.context.$implicit.def);l(n,19,0,e._17(n,20)._hidden)})}function i(l){return e._25(0,[(l()(),e._3(0,0,null,null,11,"ion-header",[],null,null,null,null,null)),e._2(1,16384,null,0,j.a,[C.a,e.k,e.D,[2,w.a]],null,null),(l()(),e._23(-1,null,["\n\n  "])),(l()(),e._3(3,0,null,null,7,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,A.b,A.a)),e._2(4,49152,null,0,E.a,[L.a,[2,w.a],[2,q.a],C.a,e.k,e.D],null,null),(l()(),e._23(-1,3,["\n    "])),(l()(),e._3(6,0,null,3,3,"ion-title",[],null,null,null,R.b,R.a)),e._2(7,49152,null,0,B.a,[C.a,e.k,e.D,[2,H.a],[2,E.a]],null,null),(l()(),e._23(8,0,["",""])),e._18(131072,_.j,[_.k,e.g]),(l()(),e._23(-1,3,["\n  "])),(l()(),e._23(-1,null,["\n\n"])),(l()(),e._23(-1,null,["\n\n\n"])),(l()(),e._3(13,0,null,null,9,"ion-content",[["block",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,U.b,U.a)),e._2(14,4374528,null,0,W.a,[C.a,Y.a,Z.a,e.k,e.D,L.a,z.a,e.x,[2,w.a],[2,q.a]],null,null),(l()(),e._23(-1,1,["\n\t"])),(l()(),e._3(16,0,null,1,5,"ion-list",[],null,null,null,null,null)),e._2(17,16384,null,0,G.a,[C.a,e.k,e.D,Y.a,K.l,Z.a],null,null),(l()(),e._23(-1,null,["\n    "])),(l()(),e.Y(16777216,null,null,1,null,t)),e._2(20,802816,null,0,M.h,[e.M,e.J,e.s],{ngForOf:[0,"ngForOf"]},null),(l()(),e._23(-1,null,["\n  "])),(l()(),e._23(-1,1,["\n"])),(l()(),e._23(-1,null,["\n"]))],function(l,n){l(n,20,0,n.component.verbs)},function(l,n){l(n,3,0,e._17(n,4)._hidden,e._17(n,4)._sbPadding);l(n,8,0,e._24(n,8,0,e._17(n,9).transform("HOME.MENU.FAVS")));l(n,13,0,e._17(n,14).statusbarPadding,e._17(n,14)._hasRefresher)})}Object.defineProperty(n,"__esModule",{value:!0});var e=u(0),o=(u(2),u(13),u(71)),r=u(56),s=u(29),c=function(){function l(l,n,u,a,t,i){var e=this;this.loadingCtrl=l,this.smartAudio=n,this.navCtrl=u,this.navParams=a,this.verbosProvider=t,this.configProvider=i;var o=this.presentLoading();o.present(),this.verbosProvider.getFavs().subscribe(function(l){e.verbs=l,o.dismiss()},function(l){o.dismiss()}),n.preload("tapped","assets/audio/waterdroplet.mp3"),n.preload("fav","assets/audio/fav.mp3")}return l.prototype.selectVerbo=function(l){this.smartAudio.play("tapped"),this.navCtrl.push("VerboRegularPage",{verbo:l})},l.prototype.presentLoading=function(){return this.loadingCtrl.create({spinner:"crescent",showBackdrop:!1})},l.prototype.isFav=function(l){var n=JSON.parse(localStorage.getItem("favs"));return!!this.myInclude(n,l)},l.prototype.addFav=function(l){this.smartAudio.play("fav");var n=JSON.parse(localStorage.getItem("favs"));if(this.myInclude(n,l)){var u=n.indexOf(l);n.splice(u,1)}else n.push(l);localStorage.setItem("favs",JSON.stringify(n)),this.configProvider.setFavs(n).subscribe(function(l){console.log(l)})},l.prototype.myInclude=function(l,n){for(var u in l)if(l[u]==n)return!0;return!1},l}(),_=u(20),d=u(52),f=u(208),p=u(98),v=function(){return function(){}}(),b=u(209),m=u(210),g=u(211),h=u(212),k=u(213),y=u(214),F=u(215),P=u(216),x=u(217),D=u(61),O=u(17),S=u(15),C=u(1),I=u(32),$=u(46),J=u(145),M=u(14),N=u(47),V=u(24),j=u(35),w=u(5),A=u(54),E=u(27),L=u(6),q=u(16),R=u(55),B=u(31),H=u(30),U=u(45),W=u(19),Y=u(4),Z=u(7),z=u(25),G=u(39),K=u(8),Q=u(57),T=u(10),X=e._1({encapsulation:2,styles:[],data:{}}),ll=e.Z("page-favorites",c,function(l){return e._25(0,[(l()(),e._3(0,0,null,null,1,"page-favorites",[],null,null,null,i,X)),e._2(1,49152,null,0,c,[Q.a,s.a,q.a,T.a,o.a,r.a],null,null)],null,null)},{},{},[]),nl=u(11),ul=u(142),al=u(53);u.d(n,"FavoritesPageModuleNgFactory",function(){return tl});var tl=e._0(v,[],function(l){return e._14([e._15(512,e.i,e.W,[[8,[b.a,m.a,g.a,h.a,k.a,y.a,F.a,P.a,x.a,ll]],[3,e.i],e.v]),e._15(4608,M.k,M.j,[e.u,[2,M.s]]),e._15(4608,nl.q,nl.q,[]),e._15(4608,nl.d,nl.d,[]),e._15(5120,_.g,a,[d.c]),e._15(4608,_.c,_.f,[]),e._15(4608,_.i,_.d,[]),e._15(4608,_.b,_.a,[]),e._15(4608,_.k,_.k,[_.n,_.g,_.c,_.i,_.b,_.l,_.m]),e._15(4608,o.a,o.a,[d.c]),e._15(4608,r.a,r.a,[d.c]),e._15(4608,p.a,p.a,[]),e._15(4608,s.a,s.a,[p.a,Y.a]),e._15(512,M.b,M.b,[]),e._15(512,nl.o,nl.o,[]),e._15(512,nl.g,nl.g,[]),e._15(512,nl.m,nl.m,[]),e._15(512,ul.a,ul.a,[]),e._15(512,ul.b,ul.b,[]),e._15(512,_.h,_.h,[]),e._15(512,v,v,[]),e._15(256,al.a,c,[]),e._15(256,_.m,void 0,[]),e._15(256,_.l,void 0,[])])})}});
+webpackJsonp([4],{
+
+/***/ 313:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["HttpLoaderFactory"] = HttpLoaderFactory;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FavoritesPageModule", function() { return FavoritesPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__favorites__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_verbos_verbos__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_config_config__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common_http__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_http_loader__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_smart_audio_smart_audio__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_native_audio__ = __webpack_require__(112);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+function HttpLoaderFactory(httpClient) {
+    return new __WEBPACK_IMPORTED_MODULE_7__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](httpClient, "./assets/i18n/", ".json");
+}
+var FavoritesPageModule = (function () {
+    function FavoritesPageModule() {
+    }
+    FavoritesPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__favorites__["a" /* FavoritesPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__favorites__["a" /* FavoritesPage */]),
+                __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__["b" /* TranslateModule */].forChild({
+                    loader: {
+                        provide: __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__["a" /* TranslateLoader */],
+                        useFactory: HttpLoaderFactory,
+                        deps: [__WEBPACK_IMPORTED_MODULE_6__angular_common_http__["b" /* HttpClient */]]
+                    }
+                })
+            ],
+            providers: [__WEBPACK_IMPORTED_MODULE_3__providers_verbos_verbos__["a" /* VerbosProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_config_config__["a" /* ConfigProvider */], __WEBPACK_IMPORTED_MODULE_9__ionic_native_native_audio__["a" /* NativeAudio */], __WEBPACK_IMPORTED_MODULE_8__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */]]
+        })
+    ], FavoritesPageModule);
+    return FavoritesPageModule;
+}());
+
+//# sourceMappingURL=favorites.module.js.map
+
+/***/ }),
+
+/***/ 320:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FavoritesPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_verbos_verbos__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_config_config__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_smart_audio_smart_audio__ = __webpack_require__(31);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var FavoritesPage = (function () {
+    function FavoritesPage(loadingCtrl, smartAudio, navCtrl, navParams, verbosProvider, configProvider) {
+        var _this = this;
+        this.loadingCtrl = loadingCtrl;
+        this.smartAudio = smartAudio;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.verbosProvider = verbosProvider;
+        this.configProvider = configProvider;
+        var load = this.presentLoading();
+        load.present();
+        this.verbosProvider.getFavs().subscribe(function (res) {
+            _this.verbs = res;
+            load.dismiss();
+        }, function (error) {
+            load.dismiss();
+        });
+        smartAudio.preload('tapped', 'assets/audio/waterdroplet.mp3');
+        smartAudio.preload('fav', 'assets/audio/fav.mp3');
+    }
+    FavoritesPage.prototype.selectVerbo = function (xverbo) {
+        this.smartAudio.play('tapped');
+        this.navCtrl.push('VerboRegularPage', { verbo: xverbo });
+    };
+    FavoritesPage.prototype.presentLoading = function () {
+        var loader = this.loadingCtrl.create({
+            spinner: 'crescent',
+            showBackdrop: false
+        });
+        return loader;
+    };
+    FavoritesPage.prototype.isFav = function (item) {
+        var f = JSON.parse(localStorage.getItem('favs'));
+        if (this.myInclude(f, item)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+    FavoritesPage.prototype.addFav = function (item) {
+        this.smartAudio.play('fav');
+        var f = JSON.parse(localStorage.getItem('favs'));
+        if (this.myInclude(f, item)) {
+            var i = f.indexOf(item);
+            f.splice(i, 1);
+        }
+        else {
+            f.push(item);
+        }
+        localStorage.setItem('favs', JSON.stringify(f));
+        this.configProvider.setFavs(f).subscribe(function (res) {
+            console.log(res);
+        });
+    };
+    FavoritesPage.prototype.myInclude = function (a, v) {
+        for (var i in a) {
+            if (a[i] == v) {
+                return true;
+            }
+        }
+        return false;
+    };
+    FavoritesPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-favorites',template:/*ion-inline-start:"C:\Users\JM\hispanicusapp\src\pages\favorites\favorites.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>{{\'HOME.MENU.FAVS\' | translate}}</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content block>\n\n	<ion-list>\n\n    <ion-item *ngFor="let verb of verbs">\n\n    	<h2 (click)="selectVerbo(verb)"><b>{{verb.infinitivo}}</b></h2>\n\n      <p style="color:gray;" (click)="selectVerbo(verb)" >{{verb.def}}</p>\n\n      <button ion-fab mini color="light" [ngClass]="{\'shine\': isFav(verb.id)}" item-end (click)="addFav(verb.id)">\n\n        <ion-icon name="star-outline"></ion-icon>\n\n      </button>  \n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\JM\hispanicusapp\src\pages\favorites\favorites.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_4__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_verbos_verbos__["a" /* VerbosProvider */], __WEBPACK_IMPORTED_MODULE_3__providers_config_config__["a" /* ConfigProvider */]])
+    ], FavoritesPage);
+    return FavoritesPage;
+}());
+
+//# sourceMappingURL=favorites.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=4.js.map

@@ -1,1 +1,492 @@
-webpackJsonp([0],{278:function(l,n,u){"use strict";function t(l){return new O.a(l,"./assets/i18n/",".json")}function e(l){return T._25(0,[T._16(null,0),(l()(),T._3(1,0,null,null,0,"div",[["class","button-effect"]],null,null,null,null,null))],null,null)}function i(l){return T._25(0,[(l()(),T._3(0,0,null,null,12,"ion-item-divider",[["class","item item-divider"],["color","primary"]],null,null,null,X.b,X.a)),T._2(1,1097728,null,3,W.a,[Z.a,Q.a,T.k,T.D,[2,ll.a]],{color:[0,"color"]},null),T._21(335544320,9,{contentLabel:0}),T._21(603979776,10,{_buttons:1}),T._21(603979776,11,{_icons:1}),T._2(5,16384,null,0,nl.a,[Q.a,T.k,T.D],{color:[0,"color"]},null),(l()(),T._23(-1,2,["\n      "])),(l()(),T._3(7,0,null,2,1,"b",[["style","color:#ff592b;"]],null,null,null,null,null)),(l()(),T._23(8,null,["",""])),(l()(),T._23(-1,2,[" \n      "])),(l()(),T._3(10,0,null,4,1,"ion-icon",[["color","info"],["item-end",""],["name","alert"],["role","img"]],[[2,"hide",null]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.goInfo(l.parent.context.$implicit)&&t}return t},null,null)),T._2(11,147456,[[11,4]],0,ul.a,[Q.a,T.k,T.D],{color:[0,"color"],name:[1,"name"]},null),(l()(),T._23(-1,2,["\n    "]))],function(l,n){l(n,1,0,"primary");l(n,5,0,"primary");l(n,11,0,"info","alert")},function(l,n){l(n,8,0,n.component.capit(n.parent.context.$implicit));l(n,10,0,T._17(n,11)._hidden)})}function o(l){return T._25(0,[(l()(),T._3(0,0,null,null,1,"ion-icon",[["color","info"],["item-end",""],["name","school"],["role","img"]],[[2,"hide",null]],[[null,"click"]],function(l,n,u){var t=!0,e=l.component;if("click"===n){t=!1!==e.goRule(e.rules[e.capit(l.parent.context.$implicit)],e.forma)&&t}return t},null,null)),T._2(1,147456,[[14,4]],0,ul.a,[Q.a,T.k,T.D],{color:[0,"color"],name:[1,"name"]},null)],function(l,n){l(n,1,0,"info","school")},function(l,n){l(n,0,0,T._17(n,1)._hidden)})}function a(l){return T._25(0,[(l()(),T._3(0,0,null,null,1,"ion-icon",[["color","info"],["name","alert"],["role","img"],["tappable",""]],[[2,"hide",null]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.goInfo("p_informal")&&t}return t},null,null)),T._2(1,147456,null,0,ul.a,[Q.a,T.k,T.D],{color:[0,"color"],name:[1,"name"]},null)],function(l,n){l(n,1,0,"info","alert")},function(l,n){l(n,0,0,T._17(n,1)._hidden)})}function r(l){return T._25(0,[(l()(),T._3(0,0,null,null,2,"div",[],null,null,null,null,null)),(l()(),T.Y(16777216,null,null,1,null,a)),T._2(2,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null)],function(l,n){l(n,2,0,n.parent.parent.context.$implicit.pronombre&&"Imperativo"!=n.component.capit(n.parent.parent.parent.parent.parent.context.$implicit))},null)}function c(l){return T._25(0,[(l()(),T._3(0,0,null,null,1,"ion-icon",[["color","info"],["name","alert"],["role","img"],["tappable",""]],[[2,"hide",null]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.goInfo("p_formal")&&t}return t},null,null)),T._2(1,147456,null,0,ul.a,[Q.a,T.k,T.D],{color:[0,"color"],name:[1,"name"]},null)],function(l,n){l(n,1,0,"info","alert")},function(l,n){l(n,0,0,T._17(n,1)._hidden)})}function s(l){return T._25(0,[(l()(),T._3(0,0,null,null,2,"div",[],null,null,null,null,null)),(l()(),T.Y(16777216,null,null,1,null,c)),T._2(2,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null)],function(l,n){l(n,2,0,n.parent.parent.context.$implicit.pronombre_formal_id&&"Imperativo"!=n.component.capit(n.parent.parent.parent.parent.parent.context.$implicit))},null)}function _(l){return T._25(0,[(l()(),T._3(0,0,null,null,1,"ion-icon",[["color","info"],["name","alert"],["role","img"],["tappable",""]],[[2,"hide",null]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.goInfo("negacion")&&t}return t},null,null)),T._2(1,147456,null,0,ul.a,[Q.a,T.k,T.D],{color:[0,"color"],name:[1,"name"]},null)],function(l,n){l(n,1,0,"info","alert")},function(l,n){l(n,0,0,T._17(n,1)._hidden)})}function m(l){return T._25(0,[(l()(),T._3(0,0,null,null,1,"ion-icon",[["color","info"],["name","alert"],["role","img"],["tappable",""]],[[2,"hide",null]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.goInfo("reflex")&&t}return t},null,null)),T._2(1,147456,null,0,ul.a,[Q.a,T.k,T.D],{color:[0,"color"],name:[1,"name"]},null)],function(l,n){l(n,1,0,"info","alert")},function(l,n){l(n,0,0,T._17(n,1)._hidden)})}function f(l){return T._25(0,[(l()(),T._3(0,0,null,null,1,"ion-icon",[["color","info"],["name","alert"],["role","img"],["tappable",""]],[[2,"hide",null]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.goInfo("auxiliar")&&t}return t},null,null)),T._2(1,147456,null,0,ul.a,[Q.a,T.k,T.D],{color:[0,"color"],name:[1,"name"]},null)],function(l,n){l(n,1,0,"info","alert")},function(l,n){l(n,0,0,T._17(n,1)._hidden)})}function d(l){return T._25(0,[(l()(),T._3(0,0,null,null,1,"ion-icon",[["class","mover"],["color","info"],["name","alert"],["role","img"],["tappable",""]],[[2,"hide",null]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.goInfo("raiz")&&t}return t},null,null)),T._2(1,147456,null,0,ul.a,[Q.a,T.k,T.D],{color:[0,"color"],name:[1,"name"]},null)],function(l,n){l(n,1,0,"info","alert")},function(l,n){l(n,0,0,T._17(n,1)._hidden)})}function p(l){return T._25(0,[(l()(),T._3(0,0,null,null,1,"ion-icon",[["color","info"],["name","alert"],["role","img"],["tappable",""]],[[2,"hide",null]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.goInfo("p_gramatical")&&t}return t},null,null)),T._2(1,147456,null,0,ul.a,[Q.a,T.k,T.D],{color:[0,"color"],name:[1,"name"]},null)],function(l,n){l(n,1,0,"info","alert")},function(l,n){l(n,0,0,T._17(n,1)._hidden)})}function g(l){return T._25(0,[(l()(),T._3(0,0,null,null,58,"ion-item",[["class","item item-block"],["no-padding",""]],null,null,null,X.b,X.a)),T._2(1,1097728,null,3,W.a,[Z.a,Q.a,T.k,T.D,[2,ll.a]],null,null),T._21(335544320,15,{contentLabel:0}),T._21(603979776,16,{_buttons:1}),T._21(603979776,17,{_icons:1}),T._2(5,16384,null,0,el.a,[],null,null),(l()(),T._23(-1,2,["\n      "])),(l()(),T._3(7,0,null,2,50,"ion-row",[["class","row"],["no-margin",""]],null,null,null,null,null)),T._2(8,16384,null,0,il.a,[],null,null),(l()(),T._23(-1,null,["\n\n        "])),(l()(),T._3(10,0,null,null,8,"ion-col",[["align","left"],["class","col"],["col-3",""]],null,null,null,null,null)),T._2(11,16384,null,0,ol.a,[],null,null),(l()(),T._23(-1,null,["\n          "])),(l()(),T.Y(16777216,null,null,1,null,r)),T._2(14,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null),(l()(),T._23(-1,null,["\n          "])),(l()(),T.Y(16777216,null,null,1,null,s)),T._2(17,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null),(l()(),T._23(-1,null,["\n        "])),(l()(),T._23(-1,null,["\n        "])),(l()(),T._3(20,0,null,null,5,"ion-col",[["align","left"],["class","col"],["col-1",""]],null,null,null,null,null)),T._2(21,16384,null,0,ol.a,[],null,null),(l()(),T._23(-1,null,["\n          "])),(l()(),T.Y(16777216,null,null,1,null,_)),T._2(24,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null),(l()(),T._23(-1,null,["\n        "])),(l()(),T._23(-1,null,["\n        "])),(l()(),T._3(27,0,null,null,5,"ion-col",[["class","col"],["col-1",""]],null,null,null,null,null)),T._2(28,16384,null,0,ol.a,[],null,null),(l()(),T._23(-1,null,["\n          "])),(l()(),T.Y(16777216,null,null,1,null,m)),T._2(31,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null),(l()(),T._23(-1,null,["\n        "])),(l()(),T._23(-1,null,["\n        "])),(l()(),T._3(34,0,null,null,5,"ion-col",[["align","left"],["class","col"],["col-2",""]],null,null,null,null,null)),T._2(35,16384,null,0,ol.a,[],null,null),(l()(),T._23(-1,null,["\n          "])),(l()(),T.Y(16777216,null,null,1,null,f)),T._2(38,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null),(l()(),T._23(-1,null,["\n        "])),(l()(),T._23(-1,null,["\n        "])),(l()(),T._3(41,0,null,null,8,"ion-col",[["align","right"],["class","col"],["col-4",""]],null,null,null,null,null)),T._2(42,16384,null,0,ol.a,[],null,null),(l()(),T._23(-1,null,["\n          "])),(l()(),T.Y(16777216,null,null,1,null,d)),T._2(45,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null),(l()(),T._23(-1,null,["\n          "])),(l()(),T._3(47,0,null,null,1,"ion-icon",[["color","info"],["name","alert"],["role","img"],["tappable",""]],[[2,"hide",null]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.goInfo("desinencia")&&t}return t},null,null)),T._2(48,147456,null,0,ul.a,[Q.a,T.k,T.D],{color:[0,"color"],name:[1,"name"]},null),(l()(),T._23(-1,null,["\n        "])),(l()(),T._23(-1,null,["\n        "])),(l()(),T._3(51,0,null,null,5,"ion-col",[["align","right"],["class","col"],["col-1",""]],null,null,null,null,null)),T._2(52,16384,null,0,ol.a,[],null,null),(l()(),T._23(-1,null,["\n          "])),(l()(),T.Y(16777216,null,null,1,null,p)),T._2(55,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null),(l()(),T._23(-1,null,["\n        "])),(l()(),T._23(-1,null,["\n      "])),(l()(),T._23(-1,2,["\n    "]))],function(l,n){var u=n.component;l(n,14,0,u.representar(n.parent.context.$implicit.pronombre));l(n,17,0,u.representar(n.parent.context.$implicit.pronombre_formal_id));l(n,24,0,!u.afirmativo);l(n,31,0,u.tenses);l(n,38,0,n.parent.context.$implicit.verbo_auxiliar);l(n,45,0,"nulo"!=n.parent.context.$implicit.raiz);l(n,48,0,"info","alert");l(n,55,0,n.parent.context.$implicit.pg)},function(l,n){l(n,47,0,T._17(n,48)._hidden)})}function v(l){return T._25(0,[(l()(),T._3(0,0,null,null,0,"span",[],[[8,"innerHTML",1]],null,null,null,null))],null,function(l,n){l(n,0,0,n.parent.parent.parent.context.$implicit.pronombre)})}function h(l){return T._25(0,[(l()(),T._3(0,0,null,null,2,"div",[],null,null,null,null,null)),(l()(),T.Y(16777216,null,null,1,null,v)),T._2(2,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null)],function(l,n){l(n,2,0,"Imperativo"!=n.component.capit(n.parent.parent.parent.parent.parent.context.$implicit))},null)}function b(l){return T._25(0,[(l()(),T._3(0,0,null,null,0,"span",[],[[8,"innerHTML",1]],null,null,null,null))],null,function(l,n){l(n,0,0,n.parent.parent.parent.context.$implicit.pronombre_formal_id)})}function k(l){return T._25(0,[(l()(),T._3(0,0,null,null,2,"div",[],null,null,null,null,null)),(l()(),T.Y(16777216,null,null,1,null,b)),T._2(2,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null)],function(l,n){l(n,2,0,"Imperativo"!=n.component.capit(n.parent.parent.parent.parent.parent.context.$implicit))},null)}function y(l){return T._25(0,[(l()(),T._3(0,0,null,null,1,"span",[],null,null,null,null,null)),(l()(),T._23(-1,null,["no"]))],null,null)}function I(l){return T._25(0,[(l()(),T._3(0,0,null,null,0,"span",[],[[8,"innerHTML",1]],null,null,null,null))],null,function(l,n){l(n,0,0,n.component.delAst(n.parent.parent.context.$implicit.raiz))})}function x(l){return T._25(0,[(l()(),T._3(0,0,null,null,0,"span",[["class","desinencia"]],[[8,"innerHTML",1]],null,null,null,null))],null,function(l,n){l(n,0,0,n.parent.parent.context.$implicit.desinencia)})}function E(l){return T._25(0,[(l()(),T._3(0,0,null,null,0,"span",[["class","pgramatical2"]],[[8,"innerHTML",1]],null,null,null,null))],null,function(l,n){l(n,0,0,n.component.getGramatical(n.parent.parent.context.$implicit.pg))})}function C(l){return T._25(0,[(l()(),T._3(0,0,null,null,0,"span",[["class","pgramatical"]],[[8,"innerHTML",1]],null,null,null,null))],null,function(l,n){l(n,0,0,n.component.getGramatical(n.parent.parent.context.$implicit.pg))})}function D(l){return T._25(0,[(l()(),T._3(0,0,null,null,50,"ion-item",[["class","item item-block"],["no-padding",""]],[[8,"id",0]],null,null,X.b,X.a)),T._2(1,1097728,null,3,W.a,[Z.a,Q.a,T.k,T.D,[2,ll.a]],null,null),T._21(335544320,18,{contentLabel:0}),T._21(603979776,19,{_buttons:1}),T._21(603979776,20,{_icons:1}),T._2(5,16384,null,0,el.a,[],null,null),(l()(),T._23(-1,2,["\n      "])),(l()(),T._3(7,0,null,2,42,"ion-row",[["class","row"]],null,null,null,null,null)),T._2(8,16384,null,0,il.a,[],null,null),(l()(),T._23(-1,null,["\n        "])),(l()(),T._3(10,0,null,null,8,"ion-col",[["align","left"],["class","col"],["col-3",""]],null,null,null,null,null)),T._2(11,16384,null,0,ol.a,[],null,null),(l()(),T._23(-1,null,["\n          "])),(l()(),T.Y(16777216,null,null,1,null,h)),T._2(14,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null),(l()(),T._23(-1,null,[" \n          "])),(l()(),T.Y(16777216,null,null,1,null,k)),T._2(17,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null),(l()(),T._23(-1,null,["\n        "])),(l()(),T._23(-1,null,["\n        "])),(l()(),T._3(20,0,null,null,3,"ion-col",[["class","col"],["col-1",""]],null,null,null,null,null)),T._2(21,16384,null,0,ol.a,[],null,null),(l()(),T.Y(16777216,null,null,1,null,y)),T._2(23,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null),(l()(),T._23(-1,null,["\n        "])),(l()(),T._3(25,0,null,null,2,"ion-col",[["class","col"],["col-1",""]],null,null,null,null,null)),T._2(26,16384,null,0,ol.a,[],null,null),(l()(),T._3(27,0,null,null,0,"span",[],[[8,"innerHTML",1]],null,null,null,null)),(l()(),T._23(-1,null,["\n        "])),(l()(),T._3(29,0,null,null,2,"ion-col",[["align","left"],["class","col"],["col-2",""]],null,null,null,null,null)),T._2(30,16384,null,0,ol.a,[],null,null),(l()(),T._3(31,0,null,null,0,"span",[],[[8,"innerHTML",1]],null,null,null,null)),(l()(),T._23(-1,null,["\n\n        "])),(l()(),T._3(33,0,null,null,5,"ion-col",[["align","right"],["class","col"],["col-4",""]],null,null,null,null,null)),T._2(34,16384,null,0,ol.a,[],null,null),(l()(),T.Y(16777216,null,null,1,null,I)),T._2(36,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null),(l()(),T.Y(16777216,null,null,1,null,x)),T._2(38,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null),(l()(),T._23(-1,null,["\n\n        "])),(l()(),T._3(40,0,null,null,8,"ion-col",[["align","right"],["class","col"],["col-1",""]],null,null,null,null,null)),T._2(41,16384,null,0,ol.a,[],null,null),(l()(),T._23(-1,null,["\n          "])),(l()(),T.Y(16777216,null,null,1,null,E)),T._2(44,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null),(l()(),T._23(-1,null,["\n          "])),(l()(),T.Y(16777216,null,null,1,null,C)),T._2(47,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null),(l()(),T._23(-1,null,["\n        "])),(l()(),T._23(-1,null,["\n      "])),(l()(),T._23(-1,2,["\n    "]))],function(l,n){var u=n.component;l(n,14,0,u.representar(n.parent.context.$implicit.pronombre));l(n,17,0,u.representar(n.parent.context.$implicit.pronombre_formal_id));l(n,23,0,"0"!=n.parent.context.$implicit.negativo);l(n,36,0,n.parent.context.$implicit.raiz!=n.parent.context.$implicit.desinencia);l(n,38,0,n.parent.context.$implicit.desinencia);l(n,44,0,!n.parent.context.$implicit.plural&&n.parent.context.$implicit.pg);l(n,47,0,n.parent.context.$implicit.plural&&n.parent.context.$implicit.pg)},function(l,n){l(n,0,0,T._6(1,"it_",n.parent.context.index,""));l(n,27,0,n.parent.context.$implicit.pronombre_reflex);l(n,31,0,n.parent.context.$implicit.verbo_auxiliar)})}function M(l){return T._25(0,[(l()(),T._3(0,0,null,null,7,"div",[],null,null,null,null,null)),(l()(),T._23(-1,null,["\n    \n    "])),(l()(),T.Y(16777216,null,null,1,null,g)),T._2(3,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null),(l()(),T._23(-1,null,["\n  \n    "])),(l()(),T.Y(16777216,null,null,1,null,D)),T._2(6,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null),(l()(),T._23(-1,null,["\n    "]))],function(l,n){var u=n.component;l(n,3,0,n.context.first&&n.context.$implicit.raiz&&n.context.first!=u.last&&u.hasChild);l(n,6,0,n.context.$implicit.forma_verbal==u.forma)},null)}function A(l){return T._25(0,[(l()(),T._3(0,0,null,null,21,"div",[],[[8,"className",0]],null,null,null,null)),(l()(),T._23(-1,null,["\n    \n    "])),(l()(),T._3(2,0,null,null,15,"ion-item-divider",[["class","item item-divider"],["color","primary"]],null,null,null,X.b,X.a)),T._2(3,1097728,null,3,W.a,[Z.a,Q.a,T.k,T.D,[2,ll.a]],{color:[0,"color"]},null),T._21(335544320,12,{contentLabel:0}),T._21(603979776,13,{_buttons:1}),T._21(603979776,14,{_icons:1}),T._2(7,16384,null,0,nl.a,[Q.a,T.k,T.D],{color:[0,"color"]},null),(l()(),T._23(-1,2,["\n      "])),(l()(),T._3(9,0,null,2,1,"b",[],null,null,null,null,null)),(l()(),T._23(10,null,["",""])),(l()(),T._23(-1,2,["\n      "])),(l()(),T.Y(16777216,null,4,1,null,o)),T._2(13,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null),(l()(),T._23(-1,2,["\n      "])),(l()(),T._3(15,0,null,4,1,"ion-icon",[["color","info"],["item-end",""],["name","alert"],["role","img"]],[[2,"hide",null]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.goInfo(l.context.$implicit)&&t}return t},null,null)),T._2(16,147456,[[14,4]],0,ul.a,[Q.a,T.k,T.D],{color:[0,"color"],name:[1,"name"]},null),(l()(),T._23(-1,2,["\n    "])),(l()(),T._23(-1,null,["\n    "])),(l()(),T.Y(16777216,null,null,1,null,M)),T._2(20,802816,null,0,tl.h,[T.M,T.J,T.s],{ngForOf:[0,"ngForOf"]},null),(l()(),T._23(-1,null,["\n  "]))],function(l,n){var u=n.component;l(n,3,0,"primary");l(n,7,0,"primary");l(n,13,0,u.myInclude(u.getKeys(u.rules),u.capit(n.context.$implicit))&&u.shouldShowRule(u.rules[u.capit(n.context.$implicit)]));l(n,16,0,"info","alert");l(n,20,0,u.verboData[n.parent.parent.context.$implicit][n.parent.context.$implicit][n.context.$implicit])},function(l,n){var u=n.component;l(n,0,0,T._6(1,"verbitem ",n.parent.parent.context.$implicit,""));l(n,10,0,u.capit(n.context.$implicit));l(n,15,0,T._17(n,16)._hidden)})}function $(l){return T._25(0,[(l()(),T._3(0,0,null,null,7,"div",[],null,null,null,null,null)),(l()(),T._23(-1,null,["\n    \n    "])),(l()(),T.Y(16777216,null,null,1,null,i)),T._2(3,16384,null,0,tl.i,[T.M,T.J],{ngIf:[0,"ngIf"]},null),(l()(),T._23(-1,null,["\n\n    "])),(l()(),T.Y(16777216,null,null,1,null,A)),T._2(6,802816,null,0,tl.h,[T.M,T.J,T.s],{ngForOf:[0,"ngForOf"]},null),(l()(),T._23(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,3,0,n.parent.context.index<2);l(n,6,0,u.getKeys(u.verboData[n.parent.context.$implicit][n.context.$implicit]))},null)}function N(l){return T._25(0,[(l()(),T._3(0,0,null,null,19,"ion-item-group",[],[[8,"id",0]],null,null,null,null)),T._2(1,16384,null,0,al.a,[],null,null),(l()(),T._23(-1,null,["\n    "])),(l()(),T._3(3,0,null,null,12,"ion-item-divider",[["class","fdivider item item-divider"],["color","primary"]],null,null,null,X.b,X.a)),T._2(4,1097728,null,3,W.a,[Z.a,Q.a,T.k,T.D,[2,ll.a]],{color:[0,"color"]},null),T._21(335544320,6,{contentLabel:0}),T._21(603979776,7,{_buttons:1}),T._21(603979776,8,{_icons:1}),T._2(8,16384,null,0,nl.a,[Q.a,T.k,T.D],{color:[0,"color"]},null),(l()(),T._23(-1,2,["\n      "])),(l()(),T._3(10,0,null,2,1,"b",[],null,null,null,null,null)),(l()(),T._23(11,null,["",""])),(l()(),T._23(-1,2,[" \n      "])),(l()(),T._3(13,0,null,4,1,"ion-icon",[["color","info"],["item-end",""],["name","alert"],["role","img"]],[[2,"hide",null]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.goInfo(l.context.$implicit)&&t}return t},null,null)),T._2(14,147456,[[8,4]],0,ul.a,[Q.a,T.k,T.D],{color:[0,"color"],name:[1,"name"]},null),(l()(),T._23(-1,2,["\n    "])),(l()(),T._23(-1,null,["\n    "])),(l()(),T.Y(16777216,null,null,1,null,$)),T._2(18,802816,null,0,tl.h,[T.M,T.J,T.s],{ngForOf:[0,"ngForOf"]},null),(l()(),T._23(-1,null,["\n\n  "]))],function(l,n){var u=n.component;l(n,4,0,"primary");l(n,8,0,"primary");l(n,14,0,"info","alert");l(n,18,0,u.getKeys(u.verboData[n.context.$implicit]))},function(l,n){var u=n.component;l(n,0,0,T._6(1,"",n.context.$implicit,""));l(n,11,0,u.capit(n.context.$implicit));l(n,13,0,T._17(n,14)._hidden)})}function S(l){return T._25(0,[(l()(),T._3(0,0,null,null,20,"ion-header",[],null,null,null,null,null)),T._2(1,16384,null,0,rl.a,[Q.a,T.k,T.D,[2,cl.a]],null,null),(l()(),T._23(-1,null,["\n\n  "])),(l()(),T._3(3,0,null,null,16,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,sl.b,sl.a)),T._2(4,49152,null,0,_l.a,[ml.a,[2,cl.a],[2,fl.a],Q.a,T.k,T.D],null,null),(l()(),T._23(-1,3,["\n    "])),(l()(),T._3(6,0,null,3,2,"ion-title",[],null,null,null,dl.b,dl.a)),T._2(7,49152,null,0,pl.a,[Q.a,T.k,T.D,[2,gl.a],[2,_l.a]],null,null),(l()(),T._23(8,0,["",""])),(l()(),T._23(-1,3,["\n    "])),(l()(),T._3(10,0,null,2,8,"ion-buttons",[["right",""]],null,null,null,null,null)),T._2(11,16384,null,1,vl.a,[Q.a,T.k,T.D,[2,gl.a],[2,_l.a]],null,null),T._21(603979776,1,{_buttons:1}),(l()(),T._23(-1,null,["\n      "])),(l()(),T._3(14,0,null,null,3,"button",[["icon-only",""],["ion-button",""],["tappable",""]],null,[[null,"click"]],function(l,n,u){var t=!0,e=l.component;if("click"===n){t=!1!==e.goTuto(e.verbo)&&t}return t},hl.b,hl.a)),T._2(15,1097728,[[1,4]],0,bl.a,[[8,""],Q.a,T.k,T.D],null,null),(l()(),T._3(16,0,null,0,1,"ion-icon",[["color","info"],["name","alert"],["role","img"]],[[2,"hide",null]],null,null,null,null)),T._2(17,147456,null,0,ul.a,[Q.a,T.k,T.D],{color:[0,"color"],name:[1,"name"]},null),(l()(),T._23(-1,null,["\n    "])),(l()(),T._23(-1,3,["    \n  "])),(l()(),T._23(-1,null,["\n\n"])),(l()(),T._23(-1,null,["\n\n"])),(l()(),T._3(22,0,null,null,57,"ion-content",[["block",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,kl.b,kl.a)),T._2(23,4374528,null,0,yl.a,[Q.a,Il.a,xl.a,T.k,T.D,ml.a,El.a,T.x,[2,cl.a],[2,fl.a]],null,null),(l()(),T._23(-1,1,["\n\n"])),(l()(),T._3(25,0,null,1,18,"ion-item",[["class","item item-block"],["id","tense"]],null,null,null,X.b,X.a)),T._2(26,1097728,null,3,W.a,[Z.a,Q.a,T.k,T.D,[2,ll.a]],null,null),T._21(335544320,2,{contentLabel:0}),T._21(603979776,3,{_buttons:1}),T._21(603979776,4,{_icons:1}),T._2(30,16384,null,0,el.a,[],null,null),(l()(),T._23(-1,2,["\n  "])),(l()(),T._3(32,0,null,1,3,"ion-label",[],null,null,null,null,null)),T._2(33,16384,[[2,4]],0,Cl.a,[Q.a,T.k,T.D,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),T._23(34,null,["",""])),T._18(131072,w.j,[w.k,T.g]),(l()(),T._23(-1,2,["\n  "])),(l()(),T._3(37,0,null,4,5,"ion-toggle",[["checked","true"],["color","info"]],[[2,"toggle-disabled",null],[2,"toggle-checked",null],[2,"toggle-activated",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"ionChange"],[null,"keyup"]],function(l,n,u){var t=!0,e=l.component;if("keyup"===n){t=!1!==T._17(l,38)._keyup(u)&&t}if("ngModelChange"===n){t=!1!==(e.tenses=u)&&t}if("ionChange"===n){t=!1!==e.setTense()&&t}return t},Dl.b,Dl.a)),T._2(38,1228800,null,0,Ml.a,[Z.a,Q.a,Il.a,T.k,T.D,Al.a,[2,W.a],$l.l,xl.a,T.x],{color:[0,"color"],disabled:[1,"disabled"],checked:[2,"checked"]},{ionChange:"ionChange"}),T._20(1024,null,Nl.h,function(l){return[l]},[Ml.a]),T._2(40,671744,null,0,Nl.l,[[8,null],[8,null],[8,null],[2,Nl.h]],{isDisabled:[0,"isDisabled"],model:[1,"model"]},{update:"ngModelChange"}),T._20(2048,null,Nl.i,null,[Nl.l]),T._2(42,16384,null,0,Nl.j,[Nl.i],null,null),(l()(),T._23(-1,2,["  \n"])),(l()(),T._23(-1,1,["\n\n"])),(l()(),T._3(45,0,null,1,30,"div",[["block",""]],null,null,null,null,null)),(l()(),T._23(-1,null,["\n  "])),(l()(),T._3(47,0,null,null,27,"ion-segment",[["color","danger"],["mode","ios"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null],[2,"segment-disabled",null]],[[null,"ngModelChange"],[null,"ionChange"]],function(l,n,u){var t=!0,e=l.component;if("ngModelChange"===n){t=!1!==(e.formaVerbal=u)&&t}if("ionChange"===n){t=!1!==e.setVerbalTime()&&t}return t},null,null)),T._2(48,671744,null,0,Nl.l,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),T._20(2048,null,Nl.i,null,[Nl.l]),T._2(50,16384,null,0,Nl.j,[Nl.i],null,null),T._2(51,1196032,null,1,Sl.a,[Q.a,T.k,T.D,[2,Nl.i]],{color:[0,"color"],mode:[1,"mode"]},{ionChange:"ionChange"}),T._21(603979776,5,{_buttons:1}),(l()(),T._23(-1,null,["\n    "])),(l()(),T._3(54,0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","indicativo"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==T._17(l,55).onClick()&&t}return t},e,Bl)),T._2(55,114688,[[5,4]],0,Tl.a,[],{value:[0,"value"]},null),(l()(),T._23(-1,0,["\n      Indicativo\n    "])),(l()(),T._23(-1,null,["\n    "])),(l()(),T._3(58,0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","subjuntivo"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==T._17(l,59).onClick()&&t}return t},e,Bl)),T._2(59,114688,[[5,4]],0,Tl.a,[],{value:[0,"value"]},null),(l()(),T._23(-1,0,["\n      Subjuntivo\n    "])),(l()(),T._23(-1,null,["\n    "])),(l()(),T._3(62,0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","imperativo"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==T._17(l,63).onClick()&&t}return t},e,Bl)),T._2(63,114688,[[5,4]],0,Tl.a,[],{value:[0,"value"]},null),(l()(),T._23(-1,0,["\n      Imperativo\n    "])),(l()(),T._23(-1,null,["\n    "])),(l()(),T._3(66,0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","fnp"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==T._17(l,67).onClick()&&t}return t},e,Bl)),T._2(67,114688,[[5,4]],0,Tl.a,[],{value:[0,"value"]},null),(l()(),T._23(-1,0,["\n      F.N.P.\n    "])),(l()(),T._23(-1,null,["\n    "])),(l()(),T._3(70,0,null,null,3,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","todos"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==T._17(l,71).onClick()&&t}return t},e,Bl)),T._2(71,114688,[[5,4]],0,Tl.a,[],{value:[0,"value"]},null),(l()(),T._23(72,0,["\n      ","\n    "])),T._18(131072,w.j,[w.k,T.g]),(l()(),T._23(-1,null,["\n  "])),(l()(),T._23(-1,null,["\n"])),(l()(),T._23(-1,1,["\n\n  "])),(l()(),T.Y(16777216,null,1,1,null,N)),T._2(78,802816,null,0,tl.h,[T.M,T.J,T.s],{ngForOf:[0,"ngForOf"]},null),(l()(),T._23(-1,1,["\t\n\n"])),(l()(),T._23(-1,null,["\n"])),(l()(),T._3(81,0,null,null,46,"ion-footer",[["no-border",""]],null,null,null,null,null)),T._2(82,16384,null,0,wl.a,[Q.a,T.k,T.D,[2,cl.a]],null,null),(l()(),T._23(-1,null,["\n  "])),(l()(),T._3(84,0,null,null,42,"ion-toolbar",[["block",""],["class","toolbar"]],[[2,"statusbar-padding",null]],null,null,Jl.b,Jl.a)),T._2(85,49152,null,0,gl.a,[Q.a,T.k,T.D],null,null),(l()(),T._23(-1,3,["\n    "])),(l()(),T._3(87,0,null,3,38,"ion-segment",[["color","light"],["mode","md"]],[[2,"segment-disabled",null]],null,null,null,null)),T._2(88,1196032,null,1,Sl.a,[Q.a,T.k,T.D,[2,Nl.i]],{color:[0,"color"],mode:[1,"mode"]},null),T._21(603979776,21,{_buttons:1}),(l()(),T._23(-1,null,["\n      "])),(l()(),T._3(91,0,null,null,5,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value",""]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"ionSelect"],[null,"click"]],function(l,n,u){var t=!0,e=l.component;if("click"===n){t=!1!==T._17(l,92).onClick()&&t}if("ionSelect"===n){t=!1!==e.informalAfmt()&&t}return t},e,Bl)),T._2(92,114688,[[21,4]],0,Tl.a,[],{value:[0,"value"]},{ionSelect:"ionSelect"}),(l()(),T._23(-1,0,["\n        "])),(l()(),T._3(94,0,null,0,1,"ion-icon",[["name","ios-thumbs-up-outline"],["role","img"]],[[2,"hide",null]],null,null,null,null)),T._2(95,147456,null,0,ul.a,[Q.a,T.k,T.D],{name:[0,"name"]},null),(l()(),T._23(-1,0,["\n      "])),(l()(),T._23(-1,null,["\n      "])),(l()(),T._3(98,0,null,null,5,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value",""]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"ionSelect"],[null,"click"]],function(l,n,u){var t=!0,e=l.component;if("click"===n){t=!1!==T._17(l,99).onClick()&&t}if("ionSelect"===n){t=!1!==e.informalNeg()&&t}return t},e,Bl)),T._2(99,114688,[[21,4]],0,Tl.a,[],{value:[0,"value"]},{ionSelect:"ionSelect"}),(l()(),T._23(-1,0,["\n        "])),(l()(),T._3(101,0,null,0,1,"ion-icon",[["name","ios-thumbs-down-outline"],["role","img"]],[[2,"hide",null]],null,null,null,null)),T._2(102,147456,null,0,ul.a,[Q.a,T.k,T.D],{name:[0,"name"]},null),(l()(),T._23(-1,0,["\n      "])),(l()(),T._23(-1,null,["\n      "])),(l()(),T._3(105,0,null,null,5,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value",""]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"ionSelect"],[null,"click"]],function(l,n,u){var t=!0,e=l.component;if("click"===n){t=!1!==T._17(l,106).onClick()&&t}if("ionSelect"===n){t=!1!==e.formalAfmt()&&t}return t},e,Bl)),T._2(106,114688,[[21,4]],0,Tl.a,[],{value:[0,"value"]},{ionSelect:"ionSelect"}),(l()(),T._23(-1,0,["\n        "])),(l()(),T._3(108,0,null,0,1,"ion-icon",[["name","ios-thumbs-up"],["role","img"]],[[2,"hide",null]],null,null,null,null)),T._2(109,147456,null,0,ul.a,[Q.a,T.k,T.D],{name:[0,"name"]},null),(l()(),T._23(-1,0,["\n      "])),(l()(),T._23(-1,null,["\n      "])),(l()(),T._3(112,0,null,null,5,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value",""]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"ionSelect"],[null,"click"]],function(l,n,u){var t=!0,e=l.component;if("click"===n){t=!1!==T._17(l,113).onClick()&&t}if("ionSelect"===n){t=!1!==e.formalNeg()&&t}return t},e,Bl)),T._2(113,114688,[[21,4]],0,Tl.a,[],{value:[0,"value"]},{ionSelect:"ionSelect"}),(l()(),T._23(-1,0,["\n        "])),(l()(),T._3(115,0,null,0,1,"ion-icon",[["name","ios-thumbs-down"],["role","img"]],[[2,"hide",null]],null,null,null,null)),T._2(116,147456,null,0,ul.a,[Q.a,T.k,T.D],{name:[0,"name"]},null),(l()(),T._23(-1,0,["\n      "])),(l()(),T._23(-1,null,["\n    "])),(l()(),T._3(119,0,null,null,5,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value",""]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==T._17(l,120).onClick()&&t}return t},e,Bl)),T._2(120,114688,[[21,4]],0,Tl.a,[],{value:[0,"value"]},null),(l()(),T._23(-1,0,["\n      "])),(l()(),T._3(122,0,null,0,1,"ion-icon",[["color","info"],["name","alert"],["role","img"]],[[2,"hide",null]],[[null,"click"]],function(l,n,u){var t=!0;if("click"===n){t=!1!==l.component.goInfo("dedos")&&t}return t},null,null)),T._2(123,147456,null,0,ul.a,[Q.a,T.k,T.D],{color:[0,"color"],name:[1,"name"]},null),(l()(),T._23(-1,0,["\n    "])),(l()(),T._23(-1,null,["    \n    "])),(l()(),T._23(-1,3,["\n  "])),(l()(),T._23(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,17,0,"info","alert");l(n,38,0,"info",u.reflexOnly,"true");l(n,40,0,u.reflexOnly,u.tenses);l(n,48,0,u.formaVerbal);l(n,51,0,"danger","ios");l(n,55,0,"indicativo");l(n,59,0,"subjuntivo");l(n,63,0,"imperativo");l(n,67,0,"fnp");l(n,71,0,"todos");l(n,78,0,u.verboKeys);l(n,88,0,"light","md");l(n,92,0,"");l(n,95,0,"ios-thumbs-up-outline");l(n,99,0,"");l(n,102,0,"ios-thumbs-down-outline");l(n,106,0,"");l(n,109,0,"ios-thumbs-up");l(n,113,0,"");l(n,116,0,"ios-thumbs-down");l(n,120,0,"");l(n,123,0,"info","alert")},function(l,n){var u=n.component;l(n,3,0,T._17(n,4)._hidden,T._17(n,4)._sbPadding);l(n,8,0,u.titu);l(n,16,0,T._17(n,17)._hidden);l(n,22,0,T._17(n,23).statusbarPadding,T._17(n,23)._hasRefresher);l(n,34,0,T._24(n,34,0,T._17(n,35).transform("VERBS_MENU.REFLEX_PRONOUN")));l(n,37,0,T._17(n,38)._disabled,T._17(n,38)._value,T._17(n,38)._activated,T._17(n,42).ngClassUntouched,T._17(n,42).ngClassTouched,T._17(n,42).ngClassPristine,T._17(n,42).ngClassDirty,T._17(n,42).ngClassValid,T._17(n,42).ngClassInvalid,T._17(n,42).ngClassPending);l(n,47,0,T._17(n,50).ngClassUntouched,T._17(n,50).ngClassTouched,T._17(n,50).ngClassPristine,T._17(n,50).ngClassDirty,T._17(n,50).ngClassValid,T._17(n,50).ngClassInvalid,T._17(n,50).ngClassPending,T._17(n,51)._disabled);l(n,54,0,T._17(n,55)._disabled,T._17(n,55).isActive,T._17(n,55).isActive);l(n,58,0,T._17(n,59)._disabled,T._17(n,59).isActive,T._17(n,59).isActive);l(n,62,0,T._17(n,63)._disabled,T._17(n,63).isActive,T._17(n,63).isActive);l(n,66,0,T._17(n,67)._disabled,T._17(n,67).isActive,T._17(n,67).isActive);l(n,70,0,T._17(n,71)._disabled,T._17(n,71).isActive,T._17(n,71).isActive);l(n,72,0,T._24(n,72,0,T._17(n,73).transform("VERBS_MENU.ALL")));l(n,84,0,T._17(n,85)._sbPadding);l(n,87,0,T._17(n,88)._disabled);l(n,91,0,T._17(n,92)._disabled,T._17(n,92).isActive,T._17(n,92).isActive);l(n,94,0,T._17(n,95)._hidden);l(n,98,0,T._17(n,99)._disabled,T._17(n,99).isActive,T._17(n,99).isActive);l(n,101,0,T._17(n,102)._hidden);l(n,105,0,T._17(n,106)._disabled,T._17(n,106).isActive,T._17(n,106).isActive);l(n,108,0,T._17(n,109)._hidden);l(n,112,0,T._17(n,113)._disabled,T._17(n,113).isActive,T._17(n,113).isActive);l(n,115,0,T._17(n,116)._hidden);l(n,119,0,T._17(n,120)._disabled,T._17(n,120).isActive,T._17(n,120).isActive);l(n,122,0,T._17(n,123)._hidden)})}Object.defineProperty(n,"__esModule",{value:!0});var T=u(0),B=(u(2),u(13),u(71)),w=u(20),J=u(29),Y=function(){function l(l,n,u,t,e,i,o,a){var r=this;this.smartAudio=l,this.plt=n,this.translateServ=u,this.alertCtrl=t,this.loadingCtrl=e,this.navCtrl=i,this.navParams=o,this.vp=a,this.informal=!0,this.afirmativo=!0,this.hsitem=!1,this.forma="Afirmativo informal",this.formaVerbal="todos",this.tenses=!1,this.verbo=o.get("verbo"),this.tenseMsgs=[],this.reflexOnly=!1,this.titu=this.verbo.infinitivo,this.hasChild=!0,this.translateServ.get("VERBS_MENU").subscribe(function(l){r.tenseMsgs=[l.SIMPLE_TENSES,l.COMPOUND_TENSES],r.tense=l.SIMPLE_TENSES}),l.preload("tapped","assets/audio/waterdroplet.mp3")}return l.prototype.setVerbalTime=function(){var l=this;switch(this.smartAudio.play("tapped"),this.formaVerbal){case"fnp":document.getElementById("F.N.P.").hidden=!1,document.getElementById("indicativo").hidden=!0,document.getElementById("subjuntivo").hidden=!0,document.getElementById("imperativo").hidden=!0;break;case"indicativo":document.getElementById("F.N.P.").hidden=!0,document.getElementById("indicativo").hidden=!1,document.getElementById("subjuntivo").hidden=!0,document.getElementById("imperativo").hidden=!0;break;case"subjuntivo":document.getElementById("F.N.P.").hidden=!0,document.getElementById("indicativo").hidden=!0,document.getElementById("subjuntivo").hidden=!1,document.getElementById("imperativo").hidden=!0;break;case"imperativo":document.getElementById("F.N.P.").hidden=!0,document.getElementById("indicativo").hidden=!0,document.getElementById("subjuntivo").hidden=!0,document.getElementById("imperativo").hidden=!1;break;default:document.getElementById("F.N.P.").hidden=!1,document.getElementById("indicativo").hidden=!1,document.getElementById("subjuntivo").hidden=!1,document.getElementById("imperativo").hidden=!1}setTimeout(function(){l.hideEmpty(),l.showNotEmpty()},1)},l.prototype.myInclude=function(l,n){if(void 0!=l){if("*"==l[0])return!0;for(var u in l)if(l[u]==n)return!0;return!1}},l.prototype.goTuto=function(l){this.navCtrl.push("TutorialPage",{verbo:l})},l.prototype.setTense=function(){var l=this;this.titu=this.appendSe(),this.reflexOnly||(this.tenses?(this.tense=this.tenseMsgs[1],"Afirmativo informal"==this.forma?this.forma="Afirmativo reflexivo informal":"Afirmativo formal"==this.forma?this.forma="Afirmativo reflexivo formal":"Negativo informal"==this.forma?this.forma="Negativo reflexivo informal":"Negativo formal"==this.forma&&(this.forma="Negativo reflexivo formal")):(this.tense=this.tenseMsgs[0],"Afirmativo reflexivo informal"==this.forma?this.forma="Afirmativo informal":"Negativo reflexivo informal"==this.forma?this.forma="Negativo informal":"Afirmativo reflexivo formal"==this.forma?this.forma="Afirmativo formal":"Negativo reflexivo formal"==this.forma&&(this.forma="Negativo formal")),setTimeout(function(){l.hideEmpty(),l.showNotEmpty()},1))},l.prototype.ionViewDidLoad=function(){this.initData()},l.prototype.initData=function(){var l=this,n=this.presentLoading(),u=this.showAlert();n.present(),this.vp.getVerb(this.verbo.id).subscribe(function(u){l.rules=u.reglas,l.verboData=u.data,l.reflexOnly=u.reflexOnly,l.verboKeys=Object.keys(l.verboData),l.reflexOnly&&(l.tenses=!0,l.forma="Afirmativo reflexivo informal",l.setTense(),l.titu=l.appendSe()),n.dismiss()},function(l){n.dismiss(),u.present()},function(){setTimeout(function(){l.hideEmpty()},1)})},l.prototype.getKeys=function(l){return Object.keys(l)},l.prototype.showNotEmpty=function(){for(var l=document.getElementsByClassName("verbitem"),n=0;n<l.length;n++){for(var u=!0,t=0;t<l[n].children.length-1;t++)if(l[n].children[t].childElementCount>0){u=!1;break}u||(l[n].hidden=!1)}this.hasChild=this.hasChildren()},l.prototype.hideEmpty=function(){this.smartAudio.play("tapped");for(var l=document.getElementsByClassName("verbitem"),n=0;n<l.length;n++){for(var u=!1,t=0;t<l[n].children.length-1;t++){if(l[n].children[t].childElementCount>0){u=!1;break}u=!0}u&&(l[n].hidden=!0)}},l.prototype.presentLoading=function(){return this.loadingCtrl.create({spinner:"crescent",showBackdrop:!1})},l.prototype.showAlert=function(){var l,n,u,t,e=this;this.translateServ.get("ERROR").subscribe(function(t){l=t.TITLE,n=t.SUBTITLE,u=t.TRY_AGAIN}),this.translateServ.get("GENERAL").subscribe(function(l){t=l.EXIT});return this.alertCtrl.create({title:l,subTitle:n,buttons:[{text:u,handler:function(){e.initData()}},{text:t,handler:function(){e.plt.exitApp()}}],enableBackdropDismiss:!1})},l.prototype.goTop=function(){var l=document.getElementById("tense");l&&l.scrollIntoView({behavior:"smooth",block:"nearest"})},l.prototype.informalNeg=function(){var l=this;this.informal=!0,this.afirmativo=!1,this.forma=this.tenses?"Negativo reflexivo informal":"Negativo informal",setTimeout(function(){l.hideEmpty(),l.showNotEmpty()},1)},l.prototype.informalAfmt=function(){var l=this;this.informal=!0,this.afirmativo=!0,this.forma=this.tenses?"Afirmativo reflexivo informal":"Afirmativo informal",setTimeout(function(){l.hideEmpty(),l.showNotEmpty()},1)},l.prototype.capit=function(l){return l[0].toUpperCase()+l.substring(1)},l.prototype.formalAfmt=function(){var l=this;this.informal=!1,this.afirmativo=!0,this.forma=this.tenses?"Afirmativo reflexivo formal":"Afirmativo formal",setTimeout(function(){l.hideEmpty(),l.showNotEmpty()},1)},l.prototype.formalNeg=function(){var l=this;this.informal=!1,this.afirmativo=!1,this.forma=this.tenses?"Negativo reflexivo formal":"Negativo formal",setTimeout(function(){l.hideEmpty(),l.showNotEmpty()},1)},l.prototype.getGramatical=function(l){switch(l){case 1:return"en"==localStorage.getItem("lang")?l+"<b class='sup'>st</b>":"zh-CN"==localStorage.getItem("lang")?"<b>第一</b>":l+"ª";case 2:return"en"==localStorage.getItem("lang")?l+"<b class='sup'>nd</b>":"zh-CN"==localStorage.getItem("lang")?"<b>第二</b>":l+"ª";case 3:return"en"==localStorage.getItem("lang")?l+"<b class='sup'>rd</b>":"zh-CN"==localStorage.getItem("lang")?"<b>第三</b>":l+"ª";default:return l+"ª"}},l.prototype.goInfo=function(l){this.navCtrl.push("InfoPage",{type:l})},l.prototype.goRule=function(l,n){this.navCtrl.push("RulePage",{rules:l,forma:n})},l.prototype.representar=function(l){return null!=l&&!(l.indexOf("*")>=0)},l.prototype.shouldShowRule=function(l){for(var n in l)if(l[n].forma==this.forma)return!0;return!1},l.prototype.appendSe=function(){var l=this.verbo.infinitivo;return this.tenses?l.indexOf(".")>=0?l=l.replace(/.[0-9]/g,"se"):l+"se":this.verbo.infinitivo},l.prototype.hasChildren=function(){for(var l=2;l<15;l++)if(null!=document.querySelector("#it_"+l))return!0;return!1},l.prototype.delAst=function(l){return l.replace(/\*/g,"")},l}(),L=u(52),O=u(208),P=u(98),j=function(){return function(){}}(),F=u(209),R=u(210),V=u(211),U=u(212),z=u(213),H=u(214),K=u(215),G=u(216),q=u(217),X=u(61),W=u(17),Z=u(15),Q=u(1),ll=u(32),nl=u(102),ul=u(24),tl=u(14),el=u(46),il=u(74),ol=u(73),al=u(144),rl=u(35),cl=u(5),sl=u(54),_l=u(27),ml=u(6),fl=u(16),dl=u(55),pl=u(31),gl=u(30),vl=u(105),hl=u(22),bl=u(12),kl=u(45),yl=u(19),Il=u(4),xl=u(7),El=u(25),Cl=u(38),Dl=u(279),Ml=u(143),Al=u(36),$l=u(8),Nl=u(11),Sl=u(147),Tl=u(103),Bl=T._1({encapsulation:2,styles:[],data:{}}),wl=u(104),Jl=u(218),Yl=u(72),Ll=u(57),Ol=u(10),Pl=T._1({encapsulation:2,styles:[],data:{}}),jl=T.Z("page-verbo-regular",Y,function(l){return T._25(0,[(l()(),T._3(0,0,null,null,1,"page-verbo-regular",[],null,null,null,S,Pl)),T._2(1,49152,null,0,Y,[J.a,Il.a,w.k,Yl.a,Ll.a,fl.a,Ol.a,B.a],null,null)],null,null)},{},{},[]),Fl=u(142),Rl=u(53);u.d(n,"FavoritesPageModuleNgFactory",function(){return Vl});var Vl=T._0(j,[],function(l){return T._14([T._15(512,T.i,T.W,[[8,[F.a,R.a,V.a,U.a,z.a,H.a,K.a,G.a,q.a,jl]],[3,T.i],T.v]),T._15(4608,tl.k,tl.j,[T.u,[2,tl.s]]),T._15(4608,Nl.q,Nl.q,[]),T._15(4608,Nl.d,Nl.d,[]),T._15(5120,w.g,t,[L.c]),T._15(4608,w.c,w.f,[]),T._15(4608,w.i,w.d,[]),T._15(4608,w.b,w.a,[]),T._15(4608,w.k,w.k,[w.n,w.g,w.c,w.i,w.b,w.l,w.m]),T._15(4608,B.a,B.a,[L.c]),T._15(4608,P.a,P.a,[]),T._15(4608,J.a,J.a,[P.a,Il.a]),T._15(512,tl.b,tl.b,[]),T._15(512,Nl.o,Nl.o,[]),T._15(512,Nl.g,Nl.g,[]),T._15(512,Nl.m,Nl.m,[]),T._15(512,Fl.a,Fl.a,[]),T._15(512,Fl.b,Fl.b,[]),T._15(512,w.h,w.h,[]),T._15(512,j,j,[]),T._15(256,Rl.a,Y,[]),T._15(256,w.m,void 0,[]),T._15(256,w.l,void 0,[])])})},279:function(l,n,u){"use strict";function t(l){return e._25(0,[(l()(),e._3(0,0,null,null,1,"div",[["class","toggle-icon"]],null,null,null,null,null)),(l()(),e._3(1,0,null,null,0,"div",[["class","toggle-inner"]],null,null,null,null,null)),(l()(),e._3(2,0,null,null,1,"button",[["class","item-cover"],["disable-activated",""],["ion-button","item-cover"],["role","checkbox"],["type","button"]],[[8,"id",0],[1,"aria-checked",0],[1,"aria-labelledby",0],[1,"aria-disabled",0]],null,null,i.b,i.a)),e._2(3,1097728,null,0,o.a,[[8,"item-cover"],a.a,e.k,e.D],null,null)],null,function(l,n){var u=n.component;l(n,2,0,u.id,u._value,u._labelId,u._disabled)})}u.d(n,"a",function(){return r}),n.b=t;var e=u(0),i=u(22),o=u(12),a=u(1),r=(u(15),u(4),u(36),u(8),u(7),e._1({encapsulation:2,styles:[],data:{}}))}});
+webpackJsonp([0],{
+
+/***/ 317:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["HttpLoaderFactory"] = HttpLoaderFactory;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FavoritesPageModule", function() { return FavoritesPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__verbo_regular__ = __webpack_require__(324);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_verbos_verbos__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_http_loader__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_smart_audio_smart_audio__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_native_audio__ = __webpack_require__(112);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+//import { ScreenOrientation } from '@ionic-native/screen-orientation';
+function HttpLoaderFactory(httpClient) {
+    return new __WEBPACK_IMPORTED_MODULE_6__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](httpClient, "./assets/i18n/", ".json");
+}
+var FavoritesPageModule = (function () {
+    function FavoritesPageModule() {
+    }
+    FavoritesPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__verbo_regular__["a" /* VerboRegularPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__verbo_regular__["a" /* VerboRegularPage */]),
+                __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__["b" /* TranslateModule */].forChild({
+                    loader: {
+                        provide: __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__["a" /* TranslateLoader */],
+                        useFactory: HttpLoaderFactory,
+                        deps: [__WEBPACK_IMPORTED_MODULE_5__angular_common_http__["b" /* HttpClient */]]
+                    }
+                })
+            ],
+            providers: [__WEBPACK_IMPORTED_MODULE_3__providers_verbos_verbos__["a" /* VerbosProvider */], __WEBPACK_IMPORTED_MODULE_8__ionic_native_native_audio__["a" /* NativeAudio */], __WEBPACK_IMPORTED_MODULE_7__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */]] //ScreenOrientation
+        })
+    ], FavoritesPageModule);
+    return FavoritesPageModule;
+}());
+
+//# sourceMappingURL=verbo-regular.module.js.map
+
+/***/ }),
+
+/***/ 324:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VerboRegularPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_verbos_verbos__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_smart_audio_smart_audio__ = __webpack_require__(31);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+var VerboRegularPage = (function () {
+    function VerboRegularPage(/*private screenOrientation: ScreenOrientation, */ smartAudio, plt, translateServ, alertCtrl, loadingCtrl, navCtrl, navParams, vp) {
+        var _this = this;
+        this.smartAudio = smartAudio;
+        this.plt = plt;
+        this.translateServ = translateServ;
+        this.alertCtrl = alertCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.vp = vp;
+        this.informal = true;
+        this.afirmativo = true;
+        this.hsitem = false;
+        this.forma = 'Afirmativo informal';
+        this.formaVerbal = 'todos';
+        this.tenses = false;
+        this.verbo = navParams.get('verbo');
+        this.tenseMsgs = [];
+        this.reflexOnly = false;
+        this.titu = this.verbo.infinitivo;
+        this.hasChild = true;
+        this.translateServ.get('VERBS_MENU').subscribe(function (verb) {
+            _this.tenseMsgs = [verb.SIMPLE_TENSES, verb.COMPOUND_TENSES];
+            _this.tense = verb.SIMPLE_TENSES;
+        });
+        smartAudio.preload('tapped', 'assets/audio/waterdroplet.mp3');
+    }
+    VerboRegularPage.prototype.setVerbalTime = function () {
+        var _this = this;
+        this.smartAudio.play('tapped');
+        switch (this.formaVerbal) {
+            case "fnp":
+                document.getElementById("F.N.P.")['hidden'] = false;
+                document.getElementById("indicativo")['hidden'] = true;
+                document.getElementById("subjuntivo")['hidden'] = true;
+                document.getElementById("imperativo")['hidden'] = true;
+                break;
+            case "indicativo":
+                document.getElementById("F.N.P.")['hidden'] = true;
+                document.getElementById("indicativo")['hidden'] = false;
+                document.getElementById("subjuntivo")['hidden'] = true;
+                document.getElementById("imperativo")['hidden'] = true;
+                break;
+            case "subjuntivo":
+                document.getElementById("F.N.P.")['hidden'] = true;
+                document.getElementById("indicativo")['hidden'] = true;
+                document.getElementById("subjuntivo")['hidden'] = false;
+                document.getElementById("imperativo")['hidden'] = true;
+                break;
+            case "imperativo":
+                document.getElementById("F.N.P.")['hidden'] = true;
+                document.getElementById("indicativo")['hidden'] = true;
+                document.getElementById("subjuntivo")['hidden'] = true;
+                document.getElementById("imperativo")['hidden'] = false;
+                break;
+            default:
+                document.getElementById("F.N.P.")['hidden'] = false;
+                document.getElementById("indicativo")['hidden'] = false;
+                document.getElementById("subjuntivo")['hidden'] = false;
+                document.getElementById("imperativo")['hidden'] = false;
+                break;
+        }
+        setTimeout(function () {
+            _this.hideEmpty();
+            _this.showNotEmpty();
+        }, 1);
+    };
+    VerboRegularPage.prototype.myInclude = function (a, v) {
+        if (a == undefined) {
+            return;
+        }
+        if (a[0] == '*') {
+            return true;
+        }
+        for (var i in a) {
+            if (a[i] == v) {
+                return true;
+            }
+        }
+        return false;
+    };
+    VerboRegularPage.prototype.goTuto = function (xverbo) {
+        this.navCtrl.push('TutorialPage', { verbo: xverbo, isReflex: this.tenses });
+    };
+    VerboRegularPage.prototype.setTense = function () {
+        var _this = this;
+        this.titu = this.appendSe();
+        if (this.reflexOnly) {
+            return;
+        }
+        if (this.tenses) {
+            this.tense = this.tenseMsgs[1];
+            if (this.forma == 'Afirmativo informal') {
+                this.forma = 'Afirmativo reflexivo informal';
+            }
+            else if (this.forma == 'Afirmativo formal') {
+                this.forma = 'Afirmativo reflexivo formal';
+            }
+            else if (this.forma == 'Negativo informal') {
+                this.forma = 'Negativo reflexivo informal';
+            }
+            else if (this.forma == 'Negativo formal') {
+                this.forma = 'Negativo reflexivo formal';
+            }
+        }
+        else {
+            this.tense = this.tenseMsgs[0];
+            if (this.forma == 'Afirmativo reflexivo informal') {
+                this.forma = 'Afirmativo informal';
+            }
+            else if (this.forma == 'Negativo reflexivo informal') {
+                this.forma = 'Negativo informal';
+            }
+            else if (this.forma == 'Afirmativo reflexivo formal') {
+                this.forma = 'Afirmativo formal';
+            }
+            else if (this.forma == 'Negativo reflexivo formal') {
+                this.forma = 'Negativo formal';
+            }
+        }
+        setTimeout(function () {
+            _this.hideEmpty();
+            _this.showNotEmpty();
+        }, 1);
+    };
+    VerboRegularPage.prototype.ionViewDidLoad = function () {
+        this.initData();
+    };
+    VerboRegularPage.prototype.initData = function () {
+        var _this = this;
+        var loader = this.presentLoading();
+        var alert = this.showAlert();
+        loader.present();
+        this.vp.getVerb(this.verbo.id)
+            .subscribe(function (data) {
+            _this.rules = data["reglas"];
+            _this.verboData = data["data"];
+            console.log(data["data"]);
+            _this.reflexOnly = data["reflexOnly"];
+            _this.verboKeys = Object.keys(_this.verboData);
+            if (_this.reflexOnly) {
+                _this.tenses = true;
+                _this.forma = 'Afirmativo reflexivo informal';
+                _this.setTense();
+                _this.titu = _this.appendSe();
+            }
+            loader.dismiss();
+        }, function (error) {
+            loader.dismiss();
+            alert.present();
+        }, function () {
+            setTimeout(function () {
+                _this.hideEmpty();
+            }, 1);
+        });
+    };
+    VerboRegularPage.prototype.getKeys = function (o) {
+        return Object.keys(o);
+    };
+    VerboRegularPage.prototype.showNotEmpty = function () {
+        var items = document.getElementsByClassName('verbitem');
+        for (var i = 0; i < items.length; i++) {
+            var empty = true;
+            for (var j = 0; j < items[i].children.length - 1; j++) {
+                if (items[i].children[j].childElementCount > 0) {
+                    empty = false;
+                    break;
+                }
+            }
+            if (!empty) {
+                items[i]['hidden'] = false;
+            }
+        }
+        this.hasChild = this.hasChildren();
+    };
+    VerboRegularPage.prototype.hideEmpty = function () {
+        this.smartAudio.play('tapped');
+        var items = document.getElementsByClassName('verbitem');
+        for (var i = 0; i < items.length; i++) {
+            var empty = false;
+            for (var j = 0; j < items[i].children.length - 1; j++) {
+                if (items[i].children[j].childElementCount > 0) {
+                    empty = false;
+                    break;
+                }
+                else {
+                    empty = true;
+                }
+            }
+            if (empty) {
+                items[i]['hidden'] = true;
+            }
+        }
+    };
+    VerboRegularPage.prototype.presentLoading = function () {
+        var loader = this.loadingCtrl.create({
+            spinner: 'crescent',
+            showBackdrop: false
+        });
+        return loader;
+    };
+    VerboRegularPage.prototype.showAlert = function () {
+        var _this = this;
+        var errorTitle;
+        var errorSubt;
+        var errorTryAgain;
+        var exit;
+        this.translateServ.get('ERROR').subscribe(function (error) {
+            errorTitle = error.TITLE;
+            errorSubt = error.SUBTITLE;
+            errorTryAgain = error.TRY_AGAIN;
+        });
+        this.translateServ.get('GENERAL').subscribe(function (general) {
+            exit = general.EXIT;
+        });
+        var alert = this.alertCtrl.create({
+            title: errorTitle,
+            subTitle: errorSubt,
+            buttons: [{
+                    text: errorTryAgain,
+                    handler: function () {
+                        _this.initData();
+                    }
+                },
+                {
+                    text: exit,
+                    handler: function () {
+                        _this.plt.exitApp();
+                    }
+                }
+            ],
+            enableBackdropDismiss: false
+        });
+        return alert;
+    };
+    VerboRegularPage.prototype.goTop = function () {
+        var el = document.getElementById('tense');
+        if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        else {
+            return;
+        }
+    };
+    VerboRegularPage.prototype.informalNeg = function () {
+        var _this = this;
+        this.informal = true;
+        this.afirmativo = false;
+        if (!this.tenses) {
+            this.forma = 'Negativo informal';
+        }
+        else {
+            this.forma = 'Negativo reflexivo informal';
+        }
+        setTimeout(function () {
+            _this.hideEmpty();
+            _this.showNotEmpty();
+        }, 1);
+    };
+    VerboRegularPage.prototype.informalAfmt = function () {
+        var _this = this;
+        this.informal = true;
+        this.afirmativo = true;
+        if (!this.tenses) {
+            this.forma = 'Afirmativo informal';
+        }
+        else {
+            this.forma = 'Afirmativo reflexivo informal';
+        }
+        setTimeout(function () {
+            _this.hideEmpty();
+            _this.showNotEmpty();
+        }, 1);
+    };
+    VerboRegularPage.prototype.capit = function (w) {
+        return w[0].toUpperCase() + w.substring(1);
+    };
+    VerboRegularPage.prototype.formalAfmt = function () {
+        var _this = this;
+        this.informal = false;
+        this.afirmativo = true;
+        if (!this.tenses) {
+            this.forma = 'Afirmativo formal';
+        }
+        else {
+            this.forma = 'Afirmativo reflexivo formal';
+        }
+        setTimeout(function () {
+            _this.hideEmpty();
+            _this.showNotEmpty();
+        }, 1);
+    };
+    VerboRegularPage.prototype.formalNeg = function () {
+        var _this = this;
+        this.informal = false;
+        this.afirmativo = false;
+        if (!this.tenses) {
+            this.forma = 'Negativo formal';
+        }
+        else {
+            this.forma = 'Negativo reflexivo formal';
+        }
+        setTimeout(function () {
+            _this.hideEmpty();
+            _this.showNotEmpty();
+        }, 1);
+    };
+    VerboRegularPage.prototype.getGramatical = function (value) {
+        switch (value) {
+            case 1:
+                if (localStorage.getItem("lang") == "en") {
+                    return (value + "<b class='sup'>st</b>");
+                }
+                else if (localStorage.getItem("lang") == 'zh-CN') {
+                    return ("<b>第一</b>");
+                }
+                return (value + "ª");
+            case 2:
+                if (localStorage.getItem("lang") == "en") {
+                    return (value + "<b class='sup'>nd</b>");
+                }
+                else if (localStorage.getItem("lang") == 'zh-CN') {
+                    return ("<b>第二</b>");
+                }
+                return (value + "ª");
+            case 3:
+                if (localStorage.getItem("lang") == "en") {
+                    return (value + "<b class='sup'>rd</b>");
+                }
+                else if (localStorage.getItem("lang") == 'zh-CN') {
+                    return ("<b>第三</b>");
+                }
+                return (value + "ª");
+            default:
+                return (value + "ª");
+        }
+    };
+    VerboRegularPage.prototype.goInfo = function (t) {
+        this.navCtrl.push('InfoPage', { type: t });
+    };
+    VerboRegularPage.prototype.goRule = function (rule, forma) {
+        this.navCtrl.push('RulePage', { rules: rule, forma: forma });
+    };
+    VerboRegularPage.prototype.representar = function (v) {
+        if (v != null) {
+            return !(v.indexOf('*') >= 0);
+        }
+        return false;
+    };
+    VerboRegularPage.prototype.shouldShowRule = function (rules) {
+        var r = false;
+        for (var r_1 in rules) {
+            if (rules[r_1].forma == this.forma) {
+                return true;
+            }
+        }
+        return r;
+    };
+    VerboRegularPage.prototype.appendSe = function () {
+        var w = this.verbo.infinitivo;
+        if (this.tenses) {
+            if (w.indexOf(".") >= 0) {
+                w = w.replace(/.[0-9]/g, "se");
+                return w;
+            }
+            else {
+                return w + "se";
+            }
+        }
+        else {
+            return this.verbo.infinitivo;
+        }
+    };
+    VerboRegularPage.prototype.hasChildren = function () {
+        for (var i = 2; i < 15; i++) {
+            if (document.querySelector("#it_" + i) != null) {
+                return true;
+            }
+        }
+        return false;
+    };
+    VerboRegularPage.prototype.delAst = function (w) {
+        return w.replace(/\*/g, '');
+    };
+    VerboRegularPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-verbo-regular',template:/*ion-inline-start:"C:\Users\JM\hispanicusapp\src\pages\verbo-regular\verbo-regular.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>{{titu}}</ion-title>\n\n    <ion-buttons right>\n\n      <button tappable ion-button icon-only (click)="goTuto(verbo)"><ion-icon name="alert" color="info"></ion-icon></button>\n\n    </ion-buttons>    \n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content block>\n\n\n\n<ion-item id="tense">\n\n  <ion-label>{{\'VERBS_MENU.REFLEX_PRONOUN\' | translate}}</ion-label>\n\n  <ion-toggle checked="true" [(ngModel)]="tenses" [disabled]="reflexOnly" (ionChange)="setTense()" color="info"></ion-toggle>  \n\n</ion-item>\n\n\n\n<div block>\n\n  <ion-segment [(ngModel)]="formaVerbal" mode="ios" color="danger" (ionChange)="setVerbalTime()">\n\n    <ion-segment-button tappable value="indicativo">\n\n      Indicativo\n\n    </ion-segment-button>\n\n    <ion-segment-button tappable value="subjuntivo">\n\n      Subjuntivo\n\n    </ion-segment-button>\n\n    <ion-segment-button tappable value="imperativo">\n\n      Imperativo\n\n    </ion-segment-button>\n\n    <ion-segment-button tappable value="fnp">\n\n      F.N.P.\n\n    </ion-segment-button>\n\n    <ion-segment-button tappable value="todos">\n\n      {{\'VERBS_MENU.ALL\' | translate}}\n\n    </ion-segment-button>\n\n  </ion-segment>\n\n</div>\n\n\n\n  <ion-item-group *ngFor="let key of verboKeys;  let idx = index " id="{{key}}">\n\n    <ion-item-divider class="fdivider" color="primary">\n\n      <b>{{capit(key)}}</b> \n\n      <ion-icon name="alert" item-end (click)="goInfo(key)" color="info"></ion-icon>\n\n    </ion-item-divider>\n\n    <div *ngFor="let t of getKeys(verboData[key])">\n\n    \n\n    <ion-item-divider *ngIf="idx < 2" color="primary">\n\n      <b style="color:#ff592b;">{{capit(t)}}</b> \n\n      <ion-icon name="alert" item-end (click)="goInfo(t)" color="info"></ion-icon>\n\n    </ion-item-divider>\n\n\n\n    <div *ngFor="let f of getKeys(verboData[key][t]); let ff = first; let idx = index" class="verbitem {{key}}">\n\n    \n\n    <ion-item-divider color="primary">\n\n      <b>{{capit(f)}}</b>\n\n      <ion-icon name="school" item-end *ngIf="myInclude(getKeys(rules), capit(f)) && shouldShowRule(rules[capit(f)])" (click)="goRule(rules[capit(f)], forma)" color="info"></ion-icon>\n\n      <ion-icon name="alert" item-end (click)="goInfo(f)" color="info"></ion-icon>\n\n    </ion-item-divider>\n\n    <div *ngFor="let item of verboData[key][t][f]; let first = first; let index = index">\n\n    \n\n    <ion-item *ngIf="first && item.raiz && first!=last && hasChild" no-padding >\n\n      <ion-row no-margin>\n\n\n\n        <ion-col col-3 align="left">\n\n          <div *ngIf="representar(item.pronombre)"><ion-icon (click)="goInfo(\'p_informal\')" tappable name="alert" color="info" *ngIf="item.pronombre && capit(key) != \'Imperativo\'"></ion-icon></div>\n\n          <div *ngIf="representar(item.pronombre_formal_id)"><ion-icon (click)="goInfo(\'p_formal\')" tappable name="alert" color="info" *ngIf="item.pronombre_formal_id && capit(key) != \'Imperativo\'"></ion-icon></div>\n\n        </ion-col>\n\n        <ion-col col-1 align="left">\n\n          <ion-icon (click)="goInfo(\'negacion\')" tappable name="alert" color="info" *ngIf="!afirmativo"></ion-icon>\n\n        </ion-col>\n\n        <ion-col col-1>\n\n          <ion-icon (click)="goInfo(\'reflex\')" tappable name="alert" color="info" *ngIf="tenses && (key != \'imperativo\' && key != \'F.N.P.\')"></ion-icon>\n\n        </ion-col>\n\n        <ion-col col-2 align="left">\n\n          <ion-icon (click)="goInfo(\'auxiliar\')" tappable name="alert" color="info" *ngIf="item.verbo_auxiliar"></ion-icon>\n\n        </ion-col>\n\n        <ion-col col-4 align="right">\n\n          <ion-icon *ngIf="item.raiz != \'nulo\'" (click)="goInfo(\'raiz\')" class="mover" tappable name="alert" color="info"></ion-icon>\n\n          <ion-icon (click)="goInfo(\'desinencia\')" tappable name="alert" color="info"></ion-icon>\n\n        </ion-col>\n\n        <ion-col col-1 align="right">\n\n          <ion-icon (click)="goInfo(\'p_gramatical\')" tappable name="alert" color="info" *ngIf="item.pg"></ion-icon>\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-item>\n\n  \n\n    <ion-item *ngIf="(item.forma_verbal == forma)" no-padding id="it_{{index}}">\n\n      <ion-row>\n\n        <ion-col col-3 align="left">\n\n          <div *ngIf="representar(item.pronombre)"><span *ngIf="capit(key) != \'Imperativo\'" [innerHTML]="item.pronombre"></span></div> \n\n          <div *ngIf="representar(item.pronombre_formal_id)"><span *ngIf="capit(key) != \'Imperativo\'" [innerHTML]="item.pronombre_formal_id"></span></div>\n\n        </ion-col>\n\n        <ion-col col-1 ><span *ngIf="item.negativo != \'0\'">no</span></ion-col>\n\n        <ion-col col-1 ><span [innerHTML]="item.pronombre_reflex"></span></ion-col>\n\n        <ion-col col-2 align="left"><span [innerHTML]="item.verbo_auxiliar"></span></ion-col>\n\n\n\n        <ion-col col-4 align="right"><span [innerHTML]="delAst(item.raiz)" *ngIf="item.raiz != item.desinencia"></span><span class="desinencia" *ngIf="item.desinencia" [innerHTML]="item.desinencia"></span></ion-col>\n\n\n\n        <ion-col col-1 align="right">\n\n          <span *ngIf="!item.plural && item.pg" class="pgramatical2" [innerHTML]="getGramatical(item.pg)"></span>\n\n          <span *ngIf="item.plural && item.pg" class="pgramatical" [innerHTML]="getGramatical(item.pg)"></span>\n\n        </ion-col>\n\n      </ion-row>\n\n    </ion-item>\n\n    </div>\n\n  </div>\n\n</div>\n\n\n\n  </ion-item-group>	\n\n\n\n</ion-content>\n\n<ion-footer no-border>\n\n  <ion-toolbar  block>\n\n    <ion-segment color="light" mode="md">\n\n      <ion-segment-button tappable value="" (ionSelect)="informalAfmt()">\n\n        <ion-icon name="ios-thumbs-up-outline"></ion-icon>\n\n      </ion-segment-button>\n\n      <ion-segment-button tappable value="" (ionSelect)="informalNeg()">\n\n        <ion-icon name="ios-thumbs-down-outline"></ion-icon>\n\n      </ion-segment-button>\n\n      <ion-segment-button tappable value="" (ionSelect)="formalAfmt()">\n\n        <ion-icon name="ios-thumbs-up"></ion-icon>\n\n      </ion-segment-button>\n\n      <ion-segment-button tappable value="" (ionSelect)="formalNeg()">\n\n        <ion-icon name="ios-thumbs-down"></ion-icon>\n\n      </ion-segment-button>\n\n    <ion-segment-button tappable value="">\n\n      <ion-icon (click)="goInfo(\'dedos\')" color="info" name="alert"></ion-icon>\n\n    </ion-segment-button>    \n\n    </ion-segment>\n\n  </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"C:\Users\JM\hispanicusapp\src\pages\verbo-regular\verbo-regular.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__providers_smart_audio_smart_audio__["a" /* SmartAudioProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_verbos_verbos__["a" /* VerbosProvider */]])
+    ], VerboRegularPage);
+    return VerboRegularPage;
+}());
+
+//# sourceMappingURL=verbo-regular.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=0.js.map

@@ -1,1 +1,106 @@
-webpackJsonp([2],{277:function(l,n,u){"use strict";function a(l){return new d.a(l,"./assets/i18n/",".json")}function t(l){return r._25(0,[(l()(),r._3(0,0,null,null,0,"p",[["class","tuto"],["justify","justify"]],[[8,"innerHTML",1]],null,null,null,null))],null,function(l,n){var u=n.component;l(n,0,0,u.pro(u.tutorial))})}function _(l){return r._25(0,[(l()(),r._23(0,null,["",""])),r._18(131072,s.j,[s.k,r.g])],null,function(l,n){l(n,0,0,r._24(n,0,0,r._17(n,1).transform("ERROR.NO_TUTO")))})}function o(l){return r._25(0,[(l()(),r._3(0,0,null,null,10,"ion-header",[],null,null,null,null,null)),r._2(1,16384,null,0,P.a,[T.a,r.k,r.D,[2,y.a]],null,null),(l()(),r._23(-1,null,["\n\n  "])),(l()(),r._3(3,0,null,null,6,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,R.b,R.a)),r._2(4,49152,null,0,E.a,[I.a,[2,y.a],[2,O.a],T.a,r.k,r.D],null,null),(l()(),r._23(-1,3,["\n    "])),(l()(),r._3(6,0,null,3,2,"ion-title",[],null,null,null,w.b,w.a)),r._2(7,49152,null,0,M.a,[T.a,r.k,r.D,[2,L.a],[2,E.a]],null,null),(l()(),r._23(8,0,["",""])),(l()(),r._23(-1,3,["\n  "])),(l()(),r._23(-1,null,["\n\n"])),(l()(),r._23(-1,null,["\n\n\n"])),(l()(),r._3(12,0,null,null,31,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,N.b,N.a)),r._2(13,4374528,null,0,q.a,[T.a,A.a,J.a,r.k,r.D,I.a,U.a,r.x,[2,y.a],[2,O.a]],null,null),(l()(),r._23(-1,1,["\n\t"])),(l()(),r._3(15,0,null,1,27,"ion-card",[],null,null,null,null,null)),r._2(16,16384,null,0,Y.a,[T.a,r.k,r.D],null,null),(l()(),r._23(-1,null,["\n\t  "])),(l()(),r._3(18,0,null,null,3,"ion-card-header",[],null,null,null,null,null)),r._2(19,16384,null,0,x.a,[T.a,r.k,r.D],null,null),(l()(),r._23(20,null,["\n\t    ","\n\t  "])),r._18(131072,s.j,[s.k,r.g]),(l()(),r._23(-1,null,["\n\t  "])),(l()(),r._3(23,0,null,null,7,"ion-card-content",[],null,null,null,null,null)),r._2(24,16384,null,0,C.a,[T.a,r.k,r.D],null,null),(l()(),r._23(-1,null,["\n\t    "])),(l()(),r.Y(16777216,null,null,1,null,t)),r._2(27,16384,null,0,F.i,[r.M,r.J],{ngIf:[0,"ngIf"],ngIfElse:[1,"ngIfElse"]},null),(l()(),r._23(-1,null,["\n\t    "])),(l()(),r.Y(0,[["not_found",2]],null,0,null,_)),(l()(),r._23(-1,null,["\n\t  "])),(l()(),r._23(-1,null,["\n    "])),(l()(),r._3(32,0,null,null,9,"ion-row",[["class","cardfooter row"]],null,null,null,null,null)),r._2(33,16384,null,0,G.a,[],null,null),(l()(),r._23(-1,null,["\n      "])),(l()(),r._3(35,0,null,null,5,"ion-col",[["class","col"]],null,null,null,null,null)),r._2(36,16384,null,0,H.a,[],null,null),(l()(),r._23(-1,null,["\n      \t"])),(l()(),r._3(38,0,null,null,1,"p",[["id","def"]],null,null,null,null,null)),(l()(),r._23(39,null,["",""])),(l()(),r._23(-1,null,["\n      "])),(l()(),r._23(-1,null,["\n    "])),(l()(),r._23(-1,null,["\n\t"])),(l()(),r._23(-1,1,["\n"])),(l()(),r._23(-1,null,["\n"]))],function(l,n){l(n,27,0,n.component.tutorial,r._17(n,29))},function(l,n){var u=n.component;l(n,3,0,r._17(n,4)._hidden,r._17(n,4)._sbPadding);l(n,8,0,u.verbo.infinitivo);l(n,12,0,r._17(n,13).statusbarPadding,r._17(n,13)._hasRefresher);l(n,20,0,r._24(n,20,0,r._17(n,21).transform("GENERAL.TUTORIAL")));l(n,39,0,u.verbo.def)})}Object.defineProperty(n,"__esModule",{value:!0});var r=u(0),i=(u(2),u(13),u(71)),e=function(){function l(l,n,u){var a=this;this.navCtrl=l,this.navParams=n,this.verbosProvider=u,this.tutorial="...",this.verbo=n.get("verbo"),console.log(this.verbo),this.verbosProvider.getTuto(this.verbo.id).subscribe(function(l){a.tutorial=l.tutorial})}return l.prototype.pro=function(l){return l=l.replace(/\[/g,'<b class="rc">'),l=l.replace(/\]/g,"</b>"),l=l.replace(/\{/g,'<b class="bc">'),l=l.replace(/\}/g,"</b>")},l}(),s=u(20),c=u(52),d=u(208),f=function(){return function(){}}(),b=u(209),g=u(210),v=u(211),p=u(212),h=u(213),k=u(214),m=u(215),j=u(216),D=u(217),P=u(35),T=u(1),y=u(5),R=u(54),E=u(27),I=u(6),O=u(16),w=u(55),M=u(31),L=u(30),N=u(45),q=u(19),A=u(4),J=u(7),U=u(25),Y=u(99),x=u(101),C=u(100),F=u(14),G=u(74),H=u(73),W=u(10),Z=r._1({encapsulation:2,styles:[],data:{}}),z=r.Z("page-tutorial",e,function(l){return r._25(0,[(l()(),r._3(0,0,null,null,1,"page-tutorial",[],null,null,null,o,Z)),r._2(1,49152,null,0,e,[O.a,W.a,i.a],null,null)],null,null)},{},{},[]),B=u(11),K=u(142),Q=u(53);u.d(n,"TutorialPageModuleNgFactory",function(){return S});var S=r._0(f,[],function(l){return r._14([r._15(512,r.i,r.W,[[8,[b.a,g.a,v.a,p.a,h.a,k.a,m.a,j.a,D.a,z]],[3,r.i],r.v]),r._15(4608,F.k,F.j,[r.u,[2,F.s]]),r._15(4608,B.q,B.q,[]),r._15(4608,B.d,B.d,[]),r._15(5120,s.g,a,[c.c]),r._15(4608,s.c,s.f,[]),r._15(4608,s.i,s.d,[]),r._15(4608,s.b,s.a,[]),r._15(4608,s.k,s.k,[s.n,s.g,s.c,s.i,s.b,s.l,s.m]),r._15(4608,i.a,i.a,[c.c]),r._15(512,F.b,F.b,[]),r._15(512,B.o,B.o,[]),r._15(512,B.g,B.g,[]),r._15(512,B.m,B.m,[]),r._15(512,K.a,K.a,[]),r._15(512,K.b,K.b,[]),r._15(512,s.h,s.h,[]),r._15(512,f,f,[]),r._15(256,Q.a,e,[]),r._15(256,s.m,void 0,[]),r._15(256,s.l,void 0,[])])})}});
+webpackJsonp([2],{
+
+/***/ 315:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["HttpLoaderFactory"] = HttpLoaderFactory;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RulePageModule", function() { return RulePageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__rule__ = __webpack_require__(322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_http_loader__ = __webpack_require__(218);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+function HttpLoaderFactory(httpClient) {
+    return new __WEBPACK_IMPORTED_MODULE_5__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](httpClient, "./assets/i18n/", ".json");
+}
+var RulePageModule = (function () {
+    function RulePageModule() {
+    }
+    RulePageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__rule__["a" /* RulePage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__rule__["a" /* RulePage */]),
+                __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */].forChild({
+                    loader: {
+                        provide: __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["a" /* TranslateLoader */],
+                        useFactory: HttpLoaderFactory,
+                        deps: [__WEBPACK_IMPORTED_MODULE_4__angular_common_http__["b" /* HttpClient */]]
+                    }
+                })
+            ],
+        })
+    ], RulePageModule);
+    return RulePageModule;
+}());
+
+//# sourceMappingURL=rule.module.js.map
+
+/***/ }),
+
+/***/ 322:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RulePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var RulePage = (function () {
+    function RulePage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.rules = navParams.get('rules') || [];
+        this.forma = navParams.get('forma') || 'Afirmativo formal';
+        console.log(this.rules);
+        console.log(this.forma);
+    }
+    RulePage.prototype.enchular = function (s) {
+        s = s.replace(/\[/g, '<b class="rc">');
+        s = s.replace(/\]/g, '</b>');
+        s = s.replace(/\{/g, '<b class="bc">');
+        s = s.replace(/\}/g, '</b>');
+        return s;
+    };
+    RulePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-rule',template:/*ion-inline-start:"C:\Users\JM\hispanicusapp\src\pages\rule\rule.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>{{\'GENERAL.RULES\' | translate}}</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n		<div *ngFor="let rule of rules; let index = index ">\n\n			<ion-card *ngIf="rule.forma == forma">\n\n		  <ion-card-header>\n\n		   {{\'GENERAL.RULE\' | translate}}\n\n		   <ion-icon color="light" name="school" float-right></ion-icon>\n\n		  </ion-card-header>\n\n		  <ion-card-content>\n\n				<p>\n\n					<span [innerHTML]="enchular(rule.regla)"></span>\n\n				</p>	  	\n\n		  </ion-card-content>\n\n		</ion-card>\n\n	</div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\JM\hispanicusapp\src\pages\rule\rule.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
+    ], RulePage);
+    return RulePage;
+}());
+
+//# sourceMappingURL=rule.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=2.js.map
